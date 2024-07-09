@@ -6,20 +6,25 @@
 
 .contenedorHeader {
     width: 100%;
-    height: 150px;
+    height: 200px;
     background-image: url(../assets/img/color-de-marca.png);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .navBar{
-    display: flex;
+    width: 100%;
     gap: 20px;
     list-style: none;
     padding-right: 20px;
-
+    display: flex;
+    align-items: center;
+    
+    
+    
+    
+    
 }
 
 .navBar li a{
@@ -27,12 +32,15 @@
     text-decoration: none;
     color: #f7f7f7;
     text-transform: capitalize;
+    width: 100%;
+  
 }
 
 
-.contenedorHeader img {
-    width:60%;
-    height: 150px;
+.logo img{
+    width: 100%;
+    height: 100px;
+    align-items: center;
 }
 
 
@@ -119,14 +127,11 @@
     background-size: cover;
     
 }
-.contenedorSobreMiIndex.h2SobreMiIndex{
-    
-    
-    height: 150px;
-    width: 50%;
-    
-    color: #f7f7f7;
-    font-size: larger;
+.h2SobreMiIndex{
+  margin-left: 40%;
+  font-size: 30px;
+  color: #333131;
+  
 
     
 }
@@ -134,7 +139,7 @@
     
     width: 500px;
     height:300px ;
-    margin-left: 300px;
+   
 }
 .sobreMiImg div article{
     width: 600px;
@@ -166,8 +171,8 @@
     margin-left: 35%;
     margin-top: 100px;
     
-    width: 400px;
-    height: 200px;
+    width: 50%;
+    height: 60%;
     color: #f7f7f7;
     font-size: larger;
 }
@@ -177,15 +182,20 @@
 .contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
     
     margin-left: 50%;
+   
+   
     
     
     border-radius: 10px 10px 10px 10px;
-    width: 200px;
-    height: 35px;
-    padding: 10;
+    width: 250px;
+    height: 50px;
+  
     background-color: #E3BBC5;
+    font-size: 20px;
 }
-
+.contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+    padding-top: 10%;
+}
 
 
 .serviciosIndex{
@@ -452,71 +462,96 @@ background-color: #afaed1;
 
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1024px){
+   
+
     .contenedorServiciosIndex{
         flex-direction: column;
         align-items: center;
         height: 1000px;
     
     }
-    .contenedorHeader{
-        flex-direction: row;
-        justify-content: space-between;
+    
+    .logo{
+        width: 55%;
     }
+    
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 5%;
+    }
+    
 
 }
 
 
-@media (max-width:768px){
+@media (max-width:800px){
+  
     .contenedorHeader{
-       flex-direction: column;
-       height: 200px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 250px;
+    
+   
+    
     }  
     
-    .contenedorHeader img{
-        margin-left: 5%;
-    }
-        
     .navBar{
-        margin-top: 20px;
+        flex-direction: column;
+        padding-right: 20px;
+        
+       
     }
+    
+
+    .contenedorHeader img{
+        width: 350px;
+        height: 150px;
+    }
+    .logo{
+        padding-top: 5%;
+       }
+    
+    
     
     .serviciosIndex h3{
         left: 200px;
-        bottom: 50px;
+        bottom: 40px;
 
     }
-    .contenedorServiciosIndex{
-        margin-left: 10%;
+    .contenedorSobreMiIndex .parrafoSobreMiIndex p{
+        width: 100%;
+       padding-bottom: 2%;
+       font-size: 15px;
+       padding-left: 5%; 
     }
-    .contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
-        left: 50%;
-    }
-   
-    }
-
-@media (max-width: 600px){
-       /* .contenedorHeader
-        flex-direction: row;
-        height: 400px;
-        background-image: url(../assets/img/color-de-marca.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        object-fit: contain;
-        
-        } 
-
-    .contenedorHeader img{
-        width: 100% */
-
-
-    }
-
-    .contenedorServiciosIndex{
-        height: 1100px;
     
-        margin-left: 15%;
+   .contenedorSobreMiIndex .botonPrincipalIndexAdriana button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+   }
 
+    
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 2%;
+
+    }
+    .contenedorSobreMiIndex{
+        height: 500px;
+    }
+    }
+
+
+
+
+
+
+
+
+@media (max-width: 570px){
+    .h2IndexServicios{
+        height: 100px;
     }
     
 
@@ -529,21 +564,8 @@ background-color: #afaed1;
         width: 100%;
         height: 500px;
 }
-.contenedorSobreMiIndex .h2SobreMiIndex{
-        height: 100px;
-        position: relative;
-        top: 80px;
-        }
-.contenedorSobreMiIndex .parrafoSobreMiIndex{
-        top: 150px;
-        left: 45%;
-        font-size: 15px;
-        width: 50%;
-        }
-.contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
-    top: 350px;
-    left: 50%;
-}
+
+
 
 
 
@@ -552,6 +574,10 @@ background-color: #afaed1;
     .h1General h1{
         font-size: 30px;
 
+    }
+    .indexImgServicios img{
+        width: 250px;
+        height: 250px;
     }
     .botonPrincipalIndex button{
         width: 200px;
@@ -566,13 +592,13 @@ background-color: #afaed1;
 .contenedorSobreMiIndex .parrafoSobreMiIndex {
     display: none;
     }
-    .contenedorSobreMiIndex .h2SobreMiIndex{
-        top: 50%;
-        left: 45%;
-        font-size: 25px;
-    } 
+    
     .contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
         width: 150px;
+        
+    }
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 50%;
     }
     .redes a img{
         width: 20px;
@@ -580,7 +606,7 @@ background-color: #afaed1;
         margin: 5px;
     }  
     footer{
-        height: 150px;
+        height: 120px;
     }
 }
 
@@ -588,10 +614,7 @@ background-color: #afaed1;
 
 @media (max-width: 400px){
     
-.contenedorServiciosIndex{
-    height: 1100px;
-    margin-left: 15%;
-}
+
 .redes{
     height: 100px;
     width: 100px;
@@ -610,6 +633,9 @@ background-color: #afaed1;
 
 
 @media (max-width: 385px){
+
+    
+    
     footer{
        height: 150px;
     }
@@ -642,7 +668,9 @@ background-color: #afaed1;
          
         
     }
-
+    .h2SobreMiIndex{
+        font-size: 25px;
+    }
 
     .serviciosIndex h3{
         font-size: 20px;
