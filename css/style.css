@@ -461,6 +461,31 @@ background-color: #afaed1;
   width: 95%;
 
 }
+.navBarBootstrap {
+    list-style: none;
+    display: flex;
+    
+    
+}
+.navBarBootstrap a{
+    text-decoration: none;
+    color: #f7f7f7;
+    
+    
+}
+.buttonBootstrap{
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #afaed1;
+   margin-top: 20px;
+   margin-left: 25%;
+   font-size: 20px;
+   
+}
+.parrafoServicios {
+    width: 100%;
+}
 
 @media (max-width: 1024px){
    
@@ -479,7 +504,10 @@ background-color: #afaed1;
     .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
         padding-top: 5%;
     }
-    
+    .explicacionServicios .parrafoServicios p{
+        width: 500px;
+        height: 100%;
+    }
 
 }
 
@@ -540,6 +568,10 @@ background-color: #afaed1;
     .contenedorSobreMiIndex{
         height: 500px;
     }
+    .explicacionServicios .parrafoServicios p{
+        width: 100%;
+        height: 100%;
+    }
     }
 
 
@@ -565,7 +597,7 @@ background-color: #afaed1;
         height: 500px;
 }
 
-
+}
 
 
 
@@ -607,6 +639,9 @@ background-color: #afaed1;
     }  
     footer{
         height: 120px;
+    }
+    .explicacionServicios .articulo{
+        font-size: 15pxpx;
     }
 }
 
@@ -686,8 +721,4 @@ background-color: #afaed1;
     
     }
 }
-
-
-
-
 
