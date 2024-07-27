@@ -1,0 +1,26 @@
+@media (max-width: 300px) {
+  .contenedor {
+    .tipoClases {
+      div {
+        h3 {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+  .contenedorSobreMiIndex {
+    height: 500px;
+    .sMi {
+
+        p{
+            font-size: 15px;
+        }
+      button {
+        width: 170px;
+      }
+    }
+  }
+  .IndexServicios {
+    height:1000px;
+  }
+}

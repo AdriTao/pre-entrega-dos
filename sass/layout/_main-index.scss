@@ -39,9 +39,13 @@
     font-size: map-get($font-size, s);
     color: #333131;
   }
-  button:active {
-    border-radius: 20px;
-  }
+  
+    button:active {
+      background-color: $color-principal;
+      color: $color-fondo;
+      border-radius: 30px;
+    }
+  
 }
 
 .contenedor {
@@ -76,51 +80,46 @@
         margin-left: 10%;
       }
       img {
-        width: 30%;
         height: 100%;
+        width: 250px;
       }
     }
   }
 }
-
 .contenedorSobreMiIndex {
   width: 100%;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  background-image: url(../assets/img/foto-sobre-mi.png);
-  background-position: left;
+  height: 700px;
+  background-image: url("../assets/img/sobremi.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
+  .sMi {
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+    gap: 50px;
+    padding-top: 20%;
 
-  .titulo {
-    height: 80px;
-    font-size: map-get($font-size, l);
-    color: aliceblue;
-    text-align: center;
-    margin-top: 200px;
-  }
-  p {
-    width: 60%;
-    height: 200px;
-    margin-left: 30%;
-    color: aliceblue;
-    margin-top: 30px;
-    font-size: map-get($font-size, s);
-  }
-  button {
-    width: 30%;
-    height: 70px;
-    margin-left: 40%;
-    background-color: $color-secundario;
+    .titulo {
+      font-size: map-get($font-size, l);
+      color: aliceblue;
+    }
+    p {
+      font-size: map-get($font-size, m);
+      color: aliceblue;
+      width: 90%;
+    }
 
-    font-size: 25px;
-    color: $color-texto;
-    position: auto;
-  }
-  button:active {
-    border-radius: 20px;
+    button {
+      width: 250px;
+      height: 80px;
+      background-color: $color-secundario;
+      font-size: map-get($font-size, s);
+    }
+    button:active {
+      background-color: $color-principal;
+      color: $color-fondo;
+      border-radius: 30px;
+    }
   }
 }
 
@@ -152,19 +151,19 @@
           transform: scale(1.1);
         }
       }
-      button {
-        width: 300px;
-        height: 50px;
-        background-color: $color-principal;
-        font-size: map-get($font-size, s);
-        color: $color-fondo;
-        border-radius: 20px;
-        margin-top: 30px;
-      }
-      button:active {
-        background-color: $color-secundario;
-        color: $color-texto;
-      }
+    }
+    button {
+      width: 300px;
+      height: 50px;
+      background-color: $color-principal;
+      font-size: map-get($font-size, s);
+      color: $color-fondo;
+      border-radius: 20px;
+      margin-top: 30px;
+    }
+    button:active {
+      background-color: $color-secundario;
+      color: $color-texto;
     }
   }
 }
@@ -220,3 +219,5 @@
     opacity: 1;
   }
 }
+
+

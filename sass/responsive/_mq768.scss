@@ -28,6 +28,23 @@
       height: 60px;
     }
   }
+
+  .contenedorSobreMiIndex {
+    .sMi {
+      padding-top: 30%;
+      margin-left: 50%;
+      p {
+        font-size: 20px;
+      }
+      button {
+        margin-left: 12%;
+        width: 200px;
+      height: 60px;
+      font-size: 15px
+      }
+    }
+  }
+
   .contenedor {
     height: 700px;
     .tipoClases {
@@ -50,37 +67,6 @@
           height: 100%;
         }
       }
-    }
-  }
-  .contenedorSobreMiIndex {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .titulo {
-      height: 50px;
-      font-size: 40px;
-      color: aliceblue;
-      text-align: center;
-      margin-top: 70px;
-    }
-    p {
-      width: 70%;
-      height: 100px;
-      margin-left: 30%;
-
-      color: aliceblue;
-      font-size: 12px;
-      margin-top: 0;
-    }
-    button {
-      width: 250px;
-      height: 40px;
-      margin-left: 40%;
-      font-size: 15px;
     }
   }
 
@@ -122,7 +108,7 @@
     }
   }
   .sobreMi {
-    height: 800px;
+    height: 900px;
 
     .pageSobreMi {
       display: flex;
@@ -137,7 +123,8 @@
       p {
         width: 95%;
         margin-left: 20px;
-        margin-top: 40px;
+        margin-top: 20px;
+        font-size: 15px;
       }
     }
   }
@@ -155,7 +142,6 @@
         align-self: center;
         width: 250px;
         height: 250px;
-        
 
         button {
           width: 250px;

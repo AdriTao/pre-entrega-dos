@@ -26,37 +26,46 @@
       height: 10px;
     }
     button {
-      width: 170px;
+      width: 150px;
       height: 40px;
       font-size: 15px;
-      margin-left: 150px;
+      margin-left: 80px;
+      margin-top: 200px;
     }
   }
-  .contenedorSobreMiIndex {
-    height: 200px;
-    width: 100%;
-    background-size: cover;
-    p {
-      display: none;
-    }
 
-    .titulo {
-      margin-top: 50px;
-      color: aliceblue;
-      height: 80px;
-    }
-    button {
-      width: 150px;
-      margin-left: 150px;
-      background-color: $color-secundario;
-      color: $color-texto;
-      font-size: 12px;
+  .contenedorSobreMiIndex {
+    height: 600px;
+    width: 100%;
+    .sMi {
+      padding-top: 60%;
+
+      button {
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
+      }
     }
   }
   .IndexServicios {
-    height: 800px;
-  }
+    height: 1000px;
+    h2 {
+      height: 50px;
 
+      font-size: map-get($font-size, m);
+    }
+  }
+  .IndexServicios {
+    height: 1000px;
+    .packDeClases {
+      height: 900px;
+    }
+  }
+.main{
+  .pack h2{
+    font-size: 30px;
+  }
+}
   .sobreMi {
     display: flex;
     flex-direction: column;
@@ -78,17 +87,16 @@
       }
       p {
         margin-left: 5px;
+        font-size: 14px;
       }
     }
   }
   .mainAlumnas {
-    h1{
+    h1 {
       font-size: 30px;
     }
-    
 
     .principalAlumnas {
-      
       img {
         width: 140px;
         height: 140px;
