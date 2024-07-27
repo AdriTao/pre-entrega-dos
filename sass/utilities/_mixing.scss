@@ -1,0 +1,19 @@
+
+
+
+
+
+@mixin grid ( $row, $col, $justify, $areas,$gapr, $gapc,){
+
+    display: grid;
+    grid-template-rows:$row ;
+    grid-template-columns: $col ;
+    justify-content: $justify;
+    grid-template-areas: $areas ;
+    row-gap: $gapr;
+    column-gap: $gapc;
+    
+}
+
+
+

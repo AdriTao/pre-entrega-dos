@@ -1,0 +1,770 @@
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.contenedorHeader {
+    width: 100%;
+    height: 200px;
+    background-image: url(../assets/img/color-de-marca.png);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar{
+    width: 100%;
+    gap: 20px;
+    list-style: none;
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    
+    
+    
+    
+    
+}
+
+.navBar li a{
+    font-size: 1.56rem;
+    text-decoration: none;
+    color: #f7f7f7;
+    text-transform: capitalize;
+    width: 100%;
+  
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+
+.SeccionPrincipalIndex{
+    width: 100%;
+    height: 700px;
+    background-image: url(../assets/img/foto-inicio.png);
+
+    
+}
+
+
+
+
+.h1General h1{
+    width: 50%;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 40px;
+    color:#f7f7f7;
+
+
+}
+.subtituloPrincipalIndex{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%
+    
+}
+.subtituloPrincipalIndex h2{
+    color: #f7f7f7;
+    font-size: 30px;
+    
+}
+
+
+.h2IndexServicios{
+    color:#333131 ;
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+
+.h2Servicios{
+
+    text-align: center;
+    color: #f7f7f7;
+    background-image: url("../assets/img/color-de-marca.png");
+
+}
+
+
+
+
+.contendeorImagenContactos{
+    width: 100%;
+    height: 500px;
+    background-image:url( ../assets/img/color-de-marca.png)
+    
+}
+
+
+
+
+
+.secciónPrincipal{
+    width: 100%;
+    height: 700px;
+    
+    
+    background-image: url("../assets/img/foto-inicio.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0%;
+    
+}
+.contenedorSobreMiIndex {
+    width: 100%;
+    height: 45rem;
+    background-image:url("../assets/img/Foto-sobre-mi.png") ;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    
+}
+.h2SobreMiIndex{
+  margin-left: 40%;
+  font-size: 30px;
+  color: #333131;
+  
+
+    
+}
+.sobreMiImg img{
+    
+    width: 500px;
+    height:300px ;
+    margin-left: 32%;
+    
+   
+}
+.sobreMiImg div article{
+    width: 600px;
+    margin-top: 20px;
+    
+    margin-left: 30%;
+
+}
+ .sobreMiImg .h1SobreMi {
+    color: #1C668D;
+    text-align: center;
+    font-size: 50px;
+    
+
+}
+
+.contenedorSobreMi{
+    
+    width: 100%;
+    height: 700px;
+    
+}
+
+.tipoClases{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.contenedorSobreMiIndex .parrafoSobreMiIndex{
+    margin-left: 35%;
+    margin-top: 100px;
+    
+    width: 50%;
+    height: 60%;
+    color: #f7f7f7;
+    font-size: larger;
+}
+
+
+
+.contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
+    
+    margin-left: 50%;
+   
+   
+    
+    
+    border-radius: 10px 10px 10px 10px;
+    width: 250px;
+    height: 50px;
+  
+    background-color: #E3BBC5;
+    font-size: 20px;
+}
+.contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+    padding-top: 10%;
+}
+
+
+.serviciosIndex{
+    background-color: #E3BBC5;
+    width: 80%;
+    height:200px;
+    margin: 20px;
+    position: relative;
+    
+
+}
+.serviciosIndex h3{
+    position: absolute;
+    left: 300px;
+    bottom: 100px;
+    color: #333131;
+    font-size: 40px;
+    
+}
+.serviciosIndex img{
+    width: 200px;
+    height: 200px;
+}
+    
+.indexImgServicios img {
+    width: 300px;
+    height: 275px;
+    border-radius: 20px;
+}
+
+.indexImgServicios button{
+    width: 200px;
+    height: 35px;
+    background-color: #1C668D;
+border-radius: 20px;
+margin: 20px;
+justify-self: flex-start;
+
+}
+
+
+
+
+.h1SobreMi{
+    color: #1C668D;
+}
+
+
+
+
+.reviews h2{
+    color: #333131;
+    font-size: 50px;
+    text-align: center;
+}
+.Contactos{
+    width: 100%;
+    text-align: center;
+    color: #f7f7f7;
+    font-size: 50px;
+}
+
+.contendeorImagenContactos .formulario {
+
+
+    width: 50%;
+    height: 400px;
+    background-color: #f7f7f7;
+    position: absolute;
+   
+    margin-left: 50%;
+    margin-top: 10px;
+    margin-right: 10px
+
+    
+}
+.contendeorImagenContactos .h1Contactos{
+    font-size: 50px;
+    width: 250px;
+    color: #f7f7f7;
+    padding-left: 20px;
+    padding-top: 20px;
+    
+}
+.formulario p{
+    font-size: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100px ;
+    background-image: url("../assets/img/color-de-marca.png");
+}
+.logoFooter img{
+    width: 200px;
+    height: 80px;
+}
+
+.redes a img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+.botonPrincipalIndex button{
+    
+    width: 300px;
+    height: 60px;
+    background-color: #E3BBC5;
+    
+    border-radius: 20px;
+    font-size: 25px;
+    color: #333131;
+    
+  
+
+}
+
+.botonPrincipalIndex{
+    width: 50%;
+    margin: auto;
+    margin-top: 10%;
+    
+
+
+
+}
+ .botonServicios button{
+    width: 200px;
+    height: 35px;
+    background-color: #1C668D;
+    border-radius: 20px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+ }
+
+    
+.contenedorServiciosIndex {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 20px;
+   
+  
+    
+    
+}
+.contenedorMain {
+    width: 100%;
+
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+.principalAlumnas img{
+    width: 90%;
+    height: 100%;
+    
+
+}
+
+.principalAlumnas {
+
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
+    grid-template-rows: repeat(6, 200px );
+    row-gap: 20px;
+    column-gap: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: none;
+}
+.mainAlumnas{
+
+background-color: #afaed1;
+
+}
+.principalAlumnas .h1Alumnas{
+    font-size: 50px;
+    color: #1C668D;
+    margin-top: 50px;
+    
+    justify-self: center;
+    grid-column: 2/4 ;
+    grid-row: 1/2;
+    
+}
+.principalAlumnas .h2Re{
+    font-size: 50px;
+    color: #1C668D;
+    justify-self: center;
+    margin-top: 50px;
+    grid-column: 1/3;
+    grid-row: 5/6;
+
+}
+.video {
+    width: 90%;
+    height: 90%;
+    grid-column: 3/5;
+    grid-row: 5/7;
+    object-fit: contain;
+}
+.img1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    
+}
+.img2{ grid-column: 1/2;
+    grid-row: 3/4;
+    
+}
+.img3{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    
+}
+.img4{
+    grid-column:3/4 ;
+    grid-row:3/4 ;
+    
+}
+.img5{
+    grid-column:4/5;
+    grid-row: 3/4
+}
+.img6{ 
+    grid-column:2/3 ;
+    grid-row:4/5 ;
+
+}
+.img7{
+    grid-column: 3/4;
+    grid-row: 4/5 ;
+    
+}
+
+.explicacionServicios {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin: 20px;
+   
+   
+}
+
+.explicacionServicios div p {
+
+    width: 700px;
+}
+.explicacionServicios article{
+    width: 250px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.explicacionServicios img{
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+    
+}
+
+.explicacionServicios .servicioEspecial{
+  width: 95%;
+
+}
+.navBarBootstrap {
+    list-style: none;
+    display: flex;
+    
+    
+}
+.navBarBootstrap a{
+    text-decoration: none;
+    color: #f7f7f7;
+    
+    
+}
+.buttonBootstrap{
+    width: 250px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #afaed1;
+   margin-top: 20px;
+   margin-left: 25%;
+   font-size: 20px;
+   
+}
+.parrafoServicios {
+    width: 100%;
+}
+
+.h1Bootstrap{
+    
+    text-align: center;
+    font-size: 60px;
+    color: #333131;
+}
+
+  /*@media (max-width: 1024px){
+   
+
+    .contenedorServiciosIndex{
+        flex-direction: column;
+        align-items: center;
+        height: 1000px;
+    
+    }
+    
+    .logo{
+        width: 55%;
+    }
+    
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 5%;
+    }
+    .explicacionServicios .parrafoServicios p{
+        width: 500px;
+        height: 100%;
+    }
+
+}**/
+
+
+/*@media (max-width:800px){
+  
+    .contenedorHeader{
+    flex-direction: row;
+    justify-content: space-between;
+    
+    height: 250px;
+    
+   
+    
+    }  
+    
+    .navBar{
+        flex-direction: column;
+        padding-right: 20px;
+        
+       
+    }
+    
+
+    .contenedorHeader img{
+        width: 350px;
+        height: 150px;
+    }
+    .logo{
+        padding-top: 5%;
+       }
+    
+    
+    
+    
+    .contenedorSobreMiIndex .parrafoSobreMiIndex p{
+        width: 100%;
+       padding-bottom: 2%;
+       font-size: 15px;
+       
+    }
+    
+   .contenedorSobreMiIndex .botonPrincipalIndexAdriana button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+   }
+
+    
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 2%;
+
+    }
+    .contenedorSobreMiIndex{
+        height: 500px;
+    }
+    .explicacionServicios .parrafoServicios p{
+        width: 100%;
+        height: 100%;
+    }
+    }
+
+
+
+
+
+
+
+
+@media (max-width: 570px){
+    .h2IndexServicios{
+        height: 100px;
+    }
+    
+
+    
+    .serviciosIndex{
+        width: 100%;
+        background-color: #E3BBC5;
+    }
+    .contenedorSobreMiIndex {
+        width: 100%;
+        height: 500px;
+}
+
+}
+
+
+
+
+@media (max-width: 483px){
+    .h1General h1{
+        font-size: 30px;
+
+    }
+    .indexImgServicios img{
+        width: 250px;
+        height: 250px;
+    }
+    .botonPrincipalIndex button{
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        
+    }
+    .serviciosIndex h3{
+        font-size: 25px;
+    }
+
+.contenedorSobreMiIndex .parrafoSobreMiIndex {
+    display: none;
+    }
+    
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana button{
+        width: 150px;
+        
+    }
+    .contenedorSobreMiIndex .botonPrincipalIndexAdriana{
+        padding-top: 50%;
+    }
+    .redes a img{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+    }  
+    footer{
+        height: 120px;
+    }
+    .explicacionServicios .fotoArticuloServicios article{
+        font-size: 15px;
+        width: 70%;
+    }
+    .explicacionServicios .fotoArticuloServicios img{
+        width: 200px;
+        height: 200px;
+    }
+    .explicacionServicios .servicioEspecial{
+        width: 200px;
+        height: 200px;
+    }
+    .explicacionServicios .parrafoServicios{
+        padding-left: 10px;
+    }
+}
+
+
+
+@media (max-width: 400px){
+    
+
+.redes{
+    height: 100px;
+    width: 100px;
+    margin-top: 50px;
+
+}
+.redes a img{
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+    position: relative;
+   
+    
+}
+.explicacionServicios .fotoArticuloServicios article{
+    display: none;
+}
+.explicacionServicios .fotoArticuloServicios img{
+    width: 300px;
+    height:300px ;
+}
+.explicacionServicios .servicioEspecial{
+    width: 300px;
+    height: 300px;
+ 
+}
+
+.explicacionServicios .parrafoServicios{
+    display: none;
+}
+.botonServicios button{
+    margin-left: 20%;
+}
+
+}
+@media (max-width: 385px){
+
+    
+    
+    footer{
+       height: 150px;
+    }
+    .redes{
+        margin-top: 10px;
+    }
+    .serviciosIndex h3{
+        font-size: 20px;
+    }
+    .contenedorServiciosIndex{
+        
+        margin-left: 5%;
+    }
+
+}
+
+
+@media (max-width: 350px){
+    .subtituloPrincipalIndex{
+        display: none;
+    }
+    .botonPrincipalIndex {
+        width: 50%;
+    margin-left: 10%;
+    margin-top: 80%
+    }
+    .h1General h1{
+        width: 50%;
+        text-align: center;
+         
+        
+    }
+    .h2SobreMiIndex{
+        font-size: 25px;
+    }
+
+    .serviciosIndex h3{
+        font-size: 20px;
+        margin-left: none ;
+        font-size:15px;
+    }
+    .serviciosIndex img{
+        width: 150px;
+        height: 150px;
+    }
+    .serviciosIndex{
+        height: 150px;
+    
+    }
+}*/
+

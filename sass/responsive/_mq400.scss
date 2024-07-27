@@ -1,0 +1,116 @@
+@media (max-width: 400px) {
+  header {
+    img {
+      width: 60%;
+      height: 100px;
+      object-fit: contain;
+    }
+    nav {
+      .navBar {
+        li a {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .SeccionPrincipalIndex {
+    height: 500px;
+    width: 100%;
+
+    background-image: url(../assets/img/foto-prin.png);
+
+    h1 {
+      font-size: 30px;
+      margin-top: 20px;
+      height: 10px;
+    }
+    button {
+      width: 170px;
+      height: 40px;
+      font-size: 15px;
+      margin-left: 150px;
+    }
+  }
+  .contenedorSobreMiIndex {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    p {
+      display: none;
+    }
+
+    .titulo {
+      margin-top: 50px;
+      color: aliceblue;
+      height: 80px;
+    }
+    button {
+      width: 150px;
+      margin-left: 150px;
+      background-color: $color-secundario;
+      color: $color-texto;
+      font-size: 12px;
+    }
+  }
+  .IndexServicios {
+    height: 800px;
+  }
+
+  .sobreMi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    h1 {
+      font-size: 30px;
+      color: $color-principal;
+      text-align: center;
+    }
+    .pageSobreMi {
+      display: flex;
+      flex-direction: column;
+      height: 700px;
+
+      img {
+        width: 250px;
+        height: 150px;
+      }
+      p {
+        margin-left: 5px;
+      }
+    }
+  }
+  .mainAlumnas {
+    h1{
+      font-size: 30px;
+    }
+    
+
+    .principalAlumnas {
+      
+      img {
+        width: 140px;
+        height: 140px;
+        object-fit: contain;
+        margin-left: 10%;
+        margin-top: 15%;
+      }
+      @include grid(
+        repeat(4, 1fr),
+        repeat(2, 1fr),
+        center,
+        "img1 img2" "img3 img4 " " img5 img6 " "img7",
+        (10px),
+        (10px)
+      );
+    }
+
+    section video {
+      width: 250px;
+      height: 250px;
+      margin-left: 20%;
+      margin-top: 30px;
+    }
+  }
+}

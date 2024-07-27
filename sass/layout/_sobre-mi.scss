@@ -1,0 +1,27 @@
+.sobreMi {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 500px;
+  h1 {
+    font-size: 40px;
+    color: $color-principal;
+    text-align: center;
+  }
+  .pageSobreMi {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+
+    img {
+      width: 400px;
+      height: 250px;
+      margin-top: 5%;
+    }
+    p {
+      width: 100%;
+      margin-left: 20px;
+      margin-top: 100px;
+    }
+  }
+}

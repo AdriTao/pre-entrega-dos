@@ -1,0 +1,49 @@
+.mainAlumnas {
+  width: 100%;
+  
+
+  h1 {
+    height: 60px;
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+
+  .principalAlumnas {
+    margin-top: 50px;
+    img {
+      width: 50%;
+      height: 80%;
+      align-self: center;
+      justify-self: center;
+
+      &:hover {
+        transform: scale(1.6);
+      }
+    }
+
+    @include grid(
+      repeat(3, 1fr),
+      repeat(3, 1fr),
+      center,
+      "img1 img2 img3" "img4 img5 img6" "img7 ",
+      (10px),
+      (10px)
+    );
+  }
+
+  section {
+    .h2Re {
+      font-size: 40px;
+      color: aliceblue;
+      background-color: $color-principal;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    video {
+      width: 400px;
+      height: 400px;
+      margin-left: 30%;
+      margin-top: 30px;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+footer {
+  height: 200px;
+  width: 100%;
+  background-image: url(../assets/img/color-de-marca.png);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+
+  
+  
+
+  
+  
+  .logo img {
+    width: 250px;
+    height: 120px;
+  }
+  p {
+    color: aliceblue;
+    font-size: 20px;
+    width: 30%;
+  }
+  a img {
+    width: 40px;
+    height: 40px;
+    margin-right: 40px;
+  }
+}

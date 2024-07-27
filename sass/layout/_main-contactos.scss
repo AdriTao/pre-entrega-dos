@@ -1,0 +1,38 @@
+
+
+
+main{
+    h1{
+        text-align: center;
+        color: $color-principal;
+        font-size: 40px;
+        text-transform: uppercase;
+
+    }
+
+    .contactos{
+        height: 500px;
+        width: 100%;
+        .formulario{
+            width: 60%;
+            height: 450px;
+            background-color: bisque;
+            margin-left: 25%;
+            h3{
+                color: $color-texto;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
