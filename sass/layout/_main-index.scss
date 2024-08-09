@@ -31,8 +31,8 @@
   }
 
   button {
-    height: 200px;
-    width: 400px;
+    height: 70px;
+    width: 350px;
     margin-top: 5%;
     background-color: $color-secundario;
     border-radius: 30px;
@@ -104,13 +104,15 @@
     flex-direction: column;
     margin-left: 35%;
     gap: 30px;
+    
 
     .titulo {
-      font-size: 50px;
+      font-size: 40px;
       color: aliceblue;
+      margin-top: 30%;
     }
     p {
-      font-size: map-get($font-size, m);
+      font-size: map-get($font-size, s);
       color: aliceblue;
       width: 85%;
     }
@@ -134,7 +136,7 @@
 }
 
 .IndexServicios {
-  height: 900px;
+  height: 700px;
   h2 {
     height: 70px;
     color: $color-principal;
@@ -148,12 +150,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    
 
     row-gap: 60px;
     margin-top: 20px;
     .card {
       width: 250px;
       height: 250px;
+      margin-top: 50px;
 
       img {
         width: 100%;
@@ -183,12 +187,7 @@
       }
     }
   }
-  section video {
-    width: 300px;
-    height: 400px;
-    margin-top: 200px;
-    margin-left: 30%;
-  }
+ 
 }
 
 .tracking-in-contract-bck-top {

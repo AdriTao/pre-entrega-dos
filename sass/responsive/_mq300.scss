@@ -29,8 +29,8 @@
   }
 
   .IndexServicios {
-    height: 1500px;
-    section video{
+    height: 1100px;
+    section video {
       margin-left: 10%;
       width: 200px;
       height: 250px;
@@ -64,14 +64,23 @@
 
   .mainAlumnas {
     .principalAlumnas {
+      height: 1700px;
+      margin-top: 50px;
       img {
-        width: 100px;
-        height: 100px;
+        width: 220px;
+        height: 220px;
       }
-    }
 
-    .h2Re {
-      font-size: 20px;
+      .h2Re {
+        font-size: 20px;
+      }
+      .reviews {
+        img {
+          width: 250px;
+          height: 270px;
+          object-fit: contain;
+        }
+      }
     }
 
     article {

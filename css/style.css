@@ -61,8 +61,8 @@ header {
     text-align: center;
     margin-top: 20px; }
   .SeccionPrincipalIndex button {
-    height: 200px;
-    width: 400px;
+    height: 70px;
+    width: 350px;
     margin-top: 5%;
     background-color: #E3BBC5;
     border-radius: 30px;
@@ -117,10 +117,11 @@ header {
     margin-left: 35%;
     gap: 30px; }
     .contenedorSobreMiIndex .sMi .titulo {
-      font-size: 50px;
-      color: aliceblue; }
+      font-size: 40px;
+      color: aliceblue;
+      margin-top: 30%; }
     .contenedorSobreMiIndex .sMi p {
-      font-size: 30px;
+      font-size: 20px;
       color: aliceblue;
       width: 85%; }
     .contenedorSobreMiIndex .sMi button {
@@ -137,7 +138,7 @@ header {
       color: #f7f7f7; }
 
 .IndexServicios {
-  height: 900px; }
+  height: 700px; }
   .IndexServicios h2 {
     height: 70px;
     color: #1C668D;
@@ -154,7 +155,8 @@ header {
     margin-top: 20px; }
     .IndexServicios .packDeClases .card {
       width: 250px;
-      height: 250px; }
+      height: 250px;
+      margin-top: 50px; }
       .IndexServicios .packDeClases .card img {
         width: 100%;
         height: 100%;
@@ -174,11 +176,6 @@ header {
       .IndexServicios .packDeClases .card button:active {
         background-color: #E3BBC5;
         color: #333131; }
-  .IndexServicios section video {
-    width: 300px;
-    height: 400px;
-    margin-top: 200px;
-    margin-left: 30%; }
 
 .tracking-in-contract-bck-top {
   -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -458,14 +455,17 @@ main .articuloServicios {
     color: aliceblue;
     background-color: #1C668D;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
   .mainAlumnas .reviews {
     display: flex;
-    flex-direction: column; }
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
     .mainAlumnas .reviews img {
-      width: 80%;
-      object-fit: contain;
-      margin-left: 10%; }
+      width: 350px;
+      height: 400px;
+      object-fit: contain; }
 
 footer {
   height: 200px;
@@ -497,70 +497,70 @@ footer {
     background-size: cover; }
     header img {
       width: 200px;
-      height: 100px; } }
-
-.SeccionPrincipalIndex button {
-  margin-top: 5%;
-  height: 60px;
-  width: 300px; }
-
-.IndexServicios h2 {
-  margin-top: 30px;
-  height: 50px;
-  font-size: 50px; }
-
-.IndexServicios .packDeClases {
-  flex-wrap: wrap; }
-  .IndexServicios .packDeClases .card {
-    align-self: center;
-    width: 250px;
-    height: 250px;
-    margin-top: 50px; }
-    .IndexServicios .packDeClases .card button {
-      width: 200px;
-      height: 40px;
-      margin-left: 30px; }
-
-.contenedorSobreMiIndex {
-  height: 800px; }
-  .contenedorSobreMiIndex .sMi {
-    padding-top: 37%;
-    margin-left: 30%;
-    font-size: 30px; }
-    .contenedorSobreMiIndex .sMi .titulo {
-      font-size: 40px; }
-    .contenedorSobreMiIndex .sMi p {
-      font-size: 20px;
-      height: 90px; }
-    .contenedorSobreMiIndex .sMi button {
-      margin-left: 10%; }
-  .contenedorSobreMiIndex main .articuloServicios {
+      height: 100px; }
+  .SeccionPrincipalIndex button {
+    margin-top: 5%;
+    height: 60px;
+    width: 300px; }
+  .IndexServicios h2 {
+    margin-top: 30px;
+    height: 50px;
+    font-size: 50px; }
+  .IndexServicios .packDeClases {
+    flex-wrap: wrap; }
+    .IndexServicios .packDeClases .card {
+      align-self: center;
+      width: 250px;
+      height: 250px;
+      margin-top: 50px; }
+      .IndexServicios .packDeClases .card button {
+        width: 200px;
+        height: 40px;
+        margin-left: 30px; }
+  .contenedorSobreMiIndex {
+    height: 800px; }
+    .contenedorSobreMiIndex .sMi {
+      padding-top: 37%;
+      margin-left: 30%;
+      font-size: 30px; }
+      .contenedorSobreMiIndex .sMi .titulo {
+        font-size: 40px;
+        margin-top: 10%; }
+      .contenedorSobreMiIndex .sMi p {
+        font-size: 20px;
+        height: 90px; }
+      .contenedorSobreMiIndex .sMi button {
+        margin-left: 10%; }
+  main .articuloServicios {
     height: 350px; }
-  .contenedorSobreMiIndex .mainSobreMi section .sobreMiPag {
+  .mainSobreMi section .sobreMiPag {
     height: 1000px; }
-  .contenedorSobreMiIndex footer .redes {
+  footer .redes {
     width: 20%;
     height: 100%; }
-    .contenedorSobreMiIndex footer .redes a img {
+    footer .redes a img {
       width: 30px;
       height: 30px; }
-  .contenedorSobreMiIndex footer .mainAlumnas {
-    height: 1700px; }
-    .contenedorSobreMiIndex footer .mainAlumnas .principalAlumnas {
-      height: 1500px;
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
-      row-gap: 10px;
-      column-gap: 10px; }
-      .contenedorSobreMiIndex footer .mainAlumnas .principalAlumnas img {
-        object-fit: contain; }
-  .contenedorSobreMiIndex .reviews img {
-    width: 90%;
-    height: 250px;
-    margin-left: 10%; }
+  .mainAlumnas .principalAlumnas {
+    height: 900px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
+    row-gap: 10px;
+    column-gap: 10px; }
+    .mainAlumnas .principalAlumnas img {
+      object-fit: contain; }
+  .mainAlumnas .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .mainAlumnas .reviews img {
+      width: 300px;
+      height: 350px;
+      object-fit: contain; } }
 
 @media (max-width: 768px) {
   header {
@@ -589,7 +589,8 @@ footer {
       height: 1000px;
       gap: 10px; }
       .contenedorSobreMiIndex .sMi .titulo {
-        font-size: 30px; }
+        font-size: 30px;
+        margin-top: 5px; }
       .contenedorSobreMiIndex .sMi p {
         font-size: 20px;
         width: 99%;
@@ -623,7 +624,7 @@ footer {
       display: flex;
       flex-direction: column; }
   .IndexServicios {
-    height: 1700px; }
+    height: 1000px; }
     .IndexServicios h2 {
       margin-top: 100px;
       height: 50px;
@@ -668,28 +669,35 @@ footer {
         .mainSobreMi .sobreMiPag .textoFuerza button a {
           font-size: 18; }
   .mainAlumnas .principalAlumnas {
+    height: 1300px;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
+    grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
     row-gap: 10px;
     column-gap: 10px; }
-  .mainAlumnas .reviews div {
-    width: 90%; }
-    .mainAlumnas .reviews div img {
-      width: 95%; }
-  main .articuloServicios {
-    height: 420px; }
-    main .articuloServicios img {
-      width: 270px; }
-    main .articuloServicios .texto h3 {
-      height: 100px; }
-    main .articuloServicios .texto p {
-      font-size: 18px; }
-    main .articuloServicios .texto button {
-      font-size: 16px;
-      width: 250px; } }
+  .reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .reviews img {
+      width: 200px;
+      height: 300px;
+      object-fit: contain; } }
+
+main .articuloServicios {
+  height: 420px; }
+  main .articuloServicios img {
+    width: 270px; }
+  main .articuloServicios .texto h3 {
+    height: 100px; }
+  main .articuloServicios .texto p {
+    font-size: 18px; }
+  main .articuloServicios .texto button {
+    font-size: 16px;
+    width: 250px; }
 
 @media (max-width: 570px) {
   header img {
@@ -734,7 +742,7 @@ footer {
         margin-left: 30%;
         font-size: 15px; }
   .IndexServicios {
-    height: 1700px; }
+    height: 1100px; }
     .IndexServicios h2 {
       height: 30px;
       color: #1C668D;
@@ -767,12 +775,12 @@ footer {
     height: 900px; }
     main .articuloServicios img {
       width: 100%;
-      height: 500px; }
+      height: 550px; }
   .mainAlumnas .fotoAlumnas {
     font-size: 30px;
     height: 40px; }
   .mainAlumnas .principalAlumnas {
-    height: 800px;
+    height: 900px;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -781,13 +789,17 @@ footer {
     row-gap: 10px;
     column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 150px;
-      height: 150px;
+      width: 180px;
+      height: 180px;
       object-fit: contain;
       margin-left: 10%;
       margin-top: 10px; }
   .mainAlumnas .h2Re {
     font-size: 30px; }
+  .mainAlumnas .reviews img {
+    width: 250px;
+    height: 270px;
+    object-fit: contain; }
   footer {
     height: 300px;
     width: 100%;
@@ -872,7 +884,7 @@ footer {
         height: 40px;
         font-size: 15px; }
   .IndexServicios {
-    height: 1500px; }
+    height: 1100px; }
     .IndexServicios h2 {
       height: 50px;
       font-size: 30px; }
@@ -885,19 +897,21 @@ footer {
   .mainAlumnas .fotoAlumnas {
     font-size: 25px; }
   .mainAlumnas .principalAlumnas {
+    height: 2000px;
+    margin-top: 3px;
     display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
-    grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
+    grid-template-areas: "img1" "img2" "img3" " img4 " " img5" " img6 " "img7";
     row-gap: 10px;
     column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 120px;
-      height: 120px;
+      width: 250px;
+      height: 250px;
       object-fit: contain;
       margin-left: 10%;
-      margin-top: 15%; }
+      margin-top: 10px; }
   .mainAlumnas .h2Re {
     font-size: 25px; }
   main div h1 {
@@ -961,7 +975,7 @@ footer {
         width: 200px;
         margin-left: 10%; }
   .IndexServicios {
-    height: 1500px; }
+    height: 1100px; }
     .IndexServicios section video {
       margin-left: 10%;
       width: 200px;
@@ -978,11 +992,18 @@ footer {
       font-size: 16px; }
     main .articuloServicios .texto button {
       width: 200px; }
-  .mainAlumnas .principalAlumnas img {
-    width: 100px;
-    height: 100px; }
-  .mainAlumnas .h2Re {
-    font-size: 20px; }
+  .mainAlumnas .principalAlumnas {
+    height: 1700px;
+    margin-top: 50px; }
+    .mainAlumnas .principalAlumnas img {
+      width: 220px;
+      height: 220px; }
+    .mainAlumnas .principalAlumnas .h2Re {
+      font-size: 20px; }
+    .mainAlumnas .principalAlumnas .reviews img {
+      width: 250px;
+      height: 270px;
+      object-fit: contain; }
   .mainAlumnas article {
     width: 90%;
     margin-left: 20px; }
