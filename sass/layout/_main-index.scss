@@ -35,21 +35,23 @@
     width: 400px;
     margin-top: 5%;
     background-color: $color-secundario;
-
+    border-radius: 30px;
     font-size: map-get($font-size, s);
-    color: #333131;
-  }
-  
-    button:active {
-      background-color: $color-principal;
-      color: $color-fondo;
-      border-radius: 30px;
+
+    a {
+      text-decoration: none;
+      color: #333131;
     }
-  
+  }
+
+  button:active {
+    background-color: $color-principal;
+    color: $color-fondo;
+  }
 }
 
 .contenedor {
-  height: 800px;
+  height: 500px;
 
   .h2IndexServicios {
     height: 100px;
@@ -61,13 +63,13 @@
     }
   }
   .tipoClases {
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
 
     div {
-      width: 80%;
+      width: 90%;
       height: 200px;
       background-color: $color-secundario;
       display: flex;
@@ -76,8 +78,11 @@
 
       h3 {
         font-size: map-get($font-size, m);
-        color: $color-texto;
+
         margin-left: 10%;
+        a {
+          color: $color-texto;
+        }
       }
       img {
         height: 100%;
@@ -88,61 +93,68 @@
 }
 .contenedorSobreMiIndex {
   width: 100%;
-  height: 700px;
+  height: 600px;
   background-image: url("../assets/img/sobremi.png");
   background-repeat: no-repeat;
-  background-size: cover;
+
+  background-size: contain;
+  background-position: center;
   .sMi {
     display: flex;
     flex-direction: column;
     margin-left: 35%;
-    gap: 50px;
-    padding-top: 20%;
+    gap: 30px;
 
     .titulo {
-      font-size: map-get($font-size, l);
+      font-size: 50px;
       color: aliceblue;
     }
     p {
       font-size: map-get($font-size, m);
       color: aliceblue;
-      width: 90%;
+      width: 85%;
     }
 
     button {
       width: 250px;
-      height: 80px;
+      height: 50px;
       background-color: $color-secundario;
       font-size: map-get($font-size, s);
+      border-radius: 30px;
+      a {
+        color: $color-texto;
+        text-decoration: none;
+      }
     }
     button:active {
       background-color: $color-principal;
       color: $color-fondo;
-      border-radius: 30px;
     }
   }
 }
 
 .IndexServicios {
-  height: 700px;
+  height: 900px;
   h2 {
-    height: 50px;
+    height: 70px;
     color: $color-principal;
-    font-size: map-get($font-size, l);
+    font-size: 70px;
     text-transform: uppercase;
     text-align: center;
   }
   .packDeClases {
     width: 100%;
-    height: 500px;
+    height: 200px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+
     row-gap: 60px;
-    margin-top: 5px;
+    margin-top: 20px;
     .card {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
+
       img {
         width: 100%;
         height: 100%;
@@ -151,20 +163,31 @@
           transform: scale(1.1);
         }
       }
+
+      button {
+        width: 250px;
+        height: 60px;
+        background-color: $color-principal;
+        font-size: map-get($font-size, s);
+
+        border-radius: 20px;
+        margin-top: 30px;
+        a {
+          color: $color-fondo;
+          text-decoration: none;
+        }
+      }
+      button:active {
+        background-color: $color-secundario;
+        color: $color-texto;
+      }
     }
-    button {
-      width: 300px;
-      height: 50px;
-      background-color: $color-principal;
-      font-size: map-get($font-size, s);
-      color: $color-fondo;
-      border-radius: 20px;
-      margin-top: 30px;
-    }
-    button:active {
-      background-color: $color-secundario;
-      color: $color-texto;
-    }
+  }
+  section video {
+    width: 300px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 30%;
   }
 }
 
@@ -220,4 +243,64 @@
   }
 }
 
+.tilt-in-left-1 {
+  -webkit-animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 
+@-webkit-keyframes tilt-in-left-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-left-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+
+.tilt-in-right-1 {
+  -webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}
+@keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1;
+  }
+}

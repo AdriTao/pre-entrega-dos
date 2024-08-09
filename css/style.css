@@ -14,7 +14,7 @@ header {
   justify-content: space-between;
   align-items: center; }
   header img {
-    width: 200px;
+    width: 250px;
     height: 100px;
     align-items: center; }
   header nav .navBar {
@@ -65,15 +65,17 @@ header {
     width: 400px;
     margin-top: 5%;
     background-color: #E3BBC5;
-    font-size: 20px;
-    color: #333131; }
+    border-radius: 30px;
+    font-size: 20px; }
+    .SeccionPrincipalIndex button a {
+      text-decoration: none;
+      color: #333131; }
   .SeccionPrincipalIndex button:active {
     background-color: #1C668D;
-    color: #f7f7f7;
-    border-radius: 30px; }
+    color: #f7f7f7; }
 
 .contenedor {
-  height: 800px; }
+  height: 500px; }
   .contenedor .h2IndexServicios {
     height: 100px; }
     .contenedor .h2IndexServicios h2 {
@@ -82,12 +84,12 @@ header {
       color: #1C668D;
       text-align: center; }
   .contenedor .tipoClases {
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px; }
+    gap: 30px;
+    align-items: center; }
     .contenedor .tipoClases div {
-      width: 80%;
+      width: 90%;
       height: 200px;
       background-color: #E3BBC5;
       display: flex;
@@ -95,77 +97,88 @@ header {
       align-items: center; }
       .contenedor .tipoClases div h3 {
         font-size: 30px;
-        color: #333131;
         margin-left: 10%; }
+        .contenedor .tipoClases div h3 a {
+          color: #333131; }
       .contenedor .tipoClases div img {
         height: 100%;
         width: 250px; }
 
 .contenedorSobreMiIndex {
   width: 100%;
-  height: 700px;
+  height: 600px;
   background-image: url("../assets/img/sobremi.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: contain;
+  background-position: center; }
   .contenedorSobreMiIndex .sMi {
     display: flex;
     flex-direction: column;
     margin-left: 35%;
-    gap: 50px;
-    padding-top: 20%; }
+    gap: 30px; }
     .contenedorSobreMiIndex .sMi .titulo {
-      font-size: 40px;
+      font-size: 50px;
       color: aliceblue; }
     .contenedorSobreMiIndex .sMi p {
       font-size: 30px;
       color: aliceblue;
-      width: 90%; }
+      width: 85%; }
     .contenedorSobreMiIndex .sMi button {
       width: 250px;
-      height: 80px;
+      height: 50px;
       background-color: #E3BBC5;
-      font-size: 20px; }
+      font-size: 20px;
+      border-radius: 30px; }
+      .contenedorSobreMiIndex .sMi button a {
+        color: #333131;
+        text-decoration: none; }
     .contenedorSobreMiIndex .sMi button:active {
       background-color: #1C668D;
-      color: #f7f7f7;
-      border-radius: 30px; }
+      color: #f7f7f7; }
 
 .IndexServicios {
-  height: 700px; }
+  height: 900px; }
   .IndexServicios h2 {
-    height: 50px;
+    height: 70px;
     color: #1C668D;
-    font-size: 40px;
+    font-size: 70px;
     text-transform: uppercase;
     text-align: center; }
   .IndexServicios .packDeClases {
     width: 100%;
-    height: 500px;
+    height: 200px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
     row-gap: 60px;
-    margin-top: 5px; }
+    margin-top: 20px; }
     .IndexServicios .packDeClases .card {
-      width: 300px;
-      height: 300px; }
+      width: 250px;
+      height: 250px; }
       .IndexServicios .packDeClases .card img {
         width: 100%;
         height: 100%;
         object-fit: contain; }
         .IndexServicios .packDeClases .card img:hover {
           transform: scale(1.1); }
-    .IndexServicios .packDeClases button {
-      width: 300px;
-      height: 50px;
-      background-color: #1C668D;
-      font-size: 20px;
-      color: #f7f7f7;
-      border-radius: 20px;
-      margin-top: 30px; }
-    .IndexServicios .packDeClases button:active {
-      background-color: #E3BBC5;
-      color: #333131; }
+      .IndexServicios .packDeClases .card button {
+        width: 250px;
+        height: 60px;
+        background-color: #1C668D;
+        font-size: 20px;
+        border-radius: 20px;
+        margin-top: 30px; }
+        .IndexServicios .packDeClases .card button a {
+          color: #f7f7f7;
+          text-decoration: none; }
+      .IndexServicios .packDeClases .card button:active {
+        background-color: #E3BBC5;
+        color: #333131; }
+  .IndexServicios section video {
+    width: 300px;
+    height: 400px;
+    margin-top: 200px;
+    margin-left: 30%; }
 
 .tracking-in-contract-bck-top {
   -webkit-animation: tracking-in-contract-bck-top 1s cubic-bezier(0.215, 0.61, 0.355, 1) both;
@@ -208,6 +221,54 @@ header {
     transform: translateZ(0) translateY(0);
     opacity: 1; } }
 
+.tilt-in-left-1 {
+  -webkit-animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-left-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes tilt-in-left-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1; } }
+
+@keyframes tilt-in-left-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    transform: rotateX(-30deg) translateX(-300px) skewX(-30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1; } }
+
+.tilt-in-right-1 {
+  -webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+
+@-webkit-keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1; } }
+
+@keyframes tilt-in-right-1 {
+  0% {
+    -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+    opacity: 0; }
+  100% {
+    -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+    transform: rotateX(0deg) translateX(0) skewX(0deg);
+    opacity: 1; } }
+
 main .pack {
   color: aliceblue;
   font-size: 40px;
@@ -216,83 +277,166 @@ main .pack {
 
 main .articuloServicios {
   width: 100%;
-  height: 300px;
+  height: 320px;
   background-color: #f7f7f7;
   display: flex;
   flex-direction: row; }
   main .articuloServicios img {
     width: 270px;
-    height: 300px; }
+    height: 100%; }
   main .articuloServicios .texto {
     display: flex;
     flex-direction: column;
-    margin-left: 10%;
-    width: 60%; }
+    margin-left: 18px; }
     main .articuloServicios .texto h3 {
-      height: 100px;
-      font-size: 30px;
-      color: #333131; }
+      height: 70px;
+      font-size: 25px;
+      color: #333131;
+      margin-top: 20px; }
     main .articuloServicios .texto p {
-      width: 60%;
-      height: 150px; }
-  main .articuloServicios button {
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #1C668D;
-    color: aliceblue;
-    margin-left: 20%;
-    font-size: 20px; }
-  main .articuloServicios button:active {
-    background-color: #E3BBC5;
-    color: #333131; }
-
-.sobreMi {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 600px; }
-  .sobreMi h1 {
-    font-size: 40px;
-    color: #1C668D;
-    text-align: center; }
-  .sobreMi .pageSobreMi {
-    display: flex;
-    flex-direction: row;
-    height: 700px; }
-    .sobreMi .pageSobreMi img {
-      width: 400px;
-      height: 250px;
-      margin-top: 5%; }
-    .sobreMi .pageSobreMi p {
-      width: 100%;
-      margin-left: 20px;
-      margin-top: 200px;
+      width: 95%;
       font-size: 20px; }
+    main .articuloServicios .texto button {
+      border-radius: 20px;
+      background-color: #1C668D;
+      color: aliceblue;
+      font-size: 20px;
+      margin-top: 20px;
+      width: 300px;
+      height: 35px; }
+      main .articuloServicios .texto button a {
+        color: aliceblue;
+        text-decoration: none; }
+    main .articuloServicios .texto button:active {
+      background-color: #E3BBC5;
+      color: #333131; }
 
-main h1 {
-  text-align: center;
+.mainSobreMi div h1 {
+  font-size: 50px;
   color: #1C668D;
-  font-size: 40px;
+  text-align: center;
+  margin-top: 30px;
   text-transform: uppercase; }
 
-main .contactos {
-  height: 500px;
-  width: 100%; }
-  main .contactos .formulario {
-    width: 60%;
-    height: 450px;
-    background-color: bisque;
-    margin-left: 25%; }
-    main .contactos .formulario h3 {
-      color: #333131; }
+.mainSobreMi section {
+  display: flex;
+  flex-direction: row; }
+  .mainSobreMi section div img {
+    width: 250px;
+    height: 250px;
+    margin-left: 20px;
+    border-radius: 20px; }
+  .mainSobreMi section div .agregado {
+    width: 90%;
+    height: 400px;
+    margin-left: 30px;
+    padding-top: 30px;
+    font-size: 18px; }
+
+.mainSobreMi .sobreLasClases {
+  font-size: 30px;
+  color: aliceblue;
+  background-color: #1C668D;
+  text-align: center; }
+
+.mainSobreMi .sobreMiPag {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; }
+  .mainSobreMi .sobreMiPag div {
+    width: 90%;
+    height: 300px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      height: 100%;
+      width: 500px;
+      margin-left: 30%;
+      object-fit: contain; }
+  .mainSobreMi .sobreMiPag .textoFuerza {
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    margin-left: 20px; }
+    .mainSobreMi .sobreMiPag .textoFuerza button {
+      margin-left: 20px;
+      margin-top: 50px;
+      width: 300px;
+      height: 60px;
+      background-color: #E3BBC5;
+      border-radius: 20px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button a {
+        color: #333131;
+        font-size: 20px;
+        text-decoration: none; }
+
+.mainContactos {
+  background-image: url(../assets/img/colores-de-marca-mas-grande.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1100px; }
+  .mainContactos h1 {
+    padding-top: 50px;
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    text-transform: uppercase; }
+  .mainContactos .sectionForm {
+    width: 80%;
+    padding-top: 50px; }
+    .mainContactos .sectionForm .sectionFormDiv {
+      height: 100px;
+      margin-left: 15%; }
+      .mainContactos .sectionForm .sectionFormDiv label {
+        font-size: 20px;
+        color: aliceblue; }
+      .mainContactos .sectionForm .sectionFormDiv .inputForm {
+        width: 100%;
+        height: 50px; }
+      .mainContactos .sectionForm .sectionFormDiv .mensajeForm {
+        width: 100%;
+        height: 300px; }
+      .mainContactos .sectionForm .sectionFormDiv .formSubmit {
+        width: 200px;
+        height: 50px;
+        color: #333131;
+        border-radius: 20px;
+        background-color: #E3BBC5;
+        font-size: 20px;
+        text-transform: uppercase; }
+    .mainContactos .sectionForm .sectionFormDivMensaje {
+      height: 400px;
+      margin-left: 15%; }
+      .mainContactos .sectionForm .sectionFormDivMensaje label {
+        font-size: 20px;
+        color: aliceblue; }
+      .mainContactos .sectionForm .sectionFormDivMensaje textarea {
+        width: 100%;
+        height: 300px; }
+  .mainContactos .whatsap {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 300px;
+    gap: 20px;
+    align-items: flex-end; }
+    .mainContactos .whatsap p {
+      color: aliceblue;
+      font-size: 30px; }
+    .mainContactos .whatsap img {
+      width: 80px;
+      height: 80px;
+      margin-right: 70px; }
 
 .mainAlumnas {
   width: 100%; }
-  .mainAlumnas h1 {
+  .mainAlumnas .fotoAlumnas {
     height: 60px;
     font-size: 50px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    color: #1C668D;
+    text-align: center; }
   .mainAlumnas .principalAlumnas {
     margin-top: 50px;
     display: grid;
@@ -303,23 +447,25 @@ main .contactos {
     row-gap: 10px;
     column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 50%;
-      height: 80%;
+      width: 80%;
+      height: 90%;
       align-self: center;
       justify-self: center; }
       .mainAlumnas .principalAlumnas img:hover {
-        transform: scale(1.6); }
-  .mainAlumnas section .h2Re {
+        transform: scale(1.2); }
+  .mainAlumnas .h2Re {
     font-size: 40px;
     color: aliceblue;
     background-color: #1C668D;
     text-transform: uppercase;
     text-align: center; }
-  .mainAlumnas section video {
-    width: 400px;
-    height: 400px;
-    margin-left: 30%;
-    margin-top: 30px; }
+  .mainAlumnas .reviews {
+    display: flex;
+    flex-direction: column; }
+    .mainAlumnas .reviews img {
+      width: 80%;
+      object-fit: contain;
+      margin-left: 10%; }
 
 footer {
   height: 200px;
@@ -356,64 +502,65 @@ footer {
 .SeccionPrincipalIndex button {
   margin-top: 5%;
   height: 60px;
-  width: 150; }
+  width: 300px; }
 
-.IndexServicios {
-  height: 700px; }
-  .IndexServicios h2 {
-    margin-top: 30px;
-    height: 50px;
-    font-size: 40px; }
-  .IndexServicios .packDeClases {
-    height: 500px; }
-    .IndexServicios .packDeClases .card {
-      align-self: center;
-      width: 250px;
-      height: 250px; }
-      .IndexServicios .packDeClases .card button {
-        width: 250px;
-        height: 50px; }
+.IndexServicios h2 {
+  margin-top: 30px;
+  height: 50px;
+  font-size: 50px; }
 
-.contenedorSobreMiIndex .sMi {
-  margin-left: 40%; }
-  .contenedorSobreMiIndex .sMi p {
-    font-size: 25px; }
-  .contenedorSobreMiIndex .sMi button {
-    margin-left: 10%; }
+.IndexServicios .packDeClases {
+  flex-wrap: wrap; }
+  .IndexServicios .packDeClases .card {
+    align-self: center;
+    width: 250px;
+    height: 250px;
+    margin-top: 50px; }
+    .IndexServicios .packDeClases .card button {
+      width: 200px;
+      height: 40px;
+      margin-left: 30px; }
 
-.sobreMi .pageSobreMi p {
-  margin-top: 5px;
-  font-size: 17px; }
-
-footer .redes {
-  width: 20%;
-  height: 100%; }
-  footer .redes a img {
-    width: 30px;
-    height: 30px; }
-
-footer .mainAlumnas {
-  height: 1700px; }
-  footer .mainAlumnas h1 {
-    font-size: 50px; }
-  footer .mainAlumnas .principalAlumnas {
-    height: 1500px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
-    row-gap: 10px;
-    column-gap: 10px; }
-    footer .mainAlumnas .principalAlumnas img {
-      width: 50%;
-      height: 80%;
-      object-fit: contain; }
-  footer .mainAlumnas section video {
-    width: 400px;
-    height: 400px;
+.contenedorSobreMiIndex {
+  height: 800px; }
+  .contenedorSobreMiIndex .sMi {
+    padding-top: 37%;
     margin-left: 30%;
-    margin-top: 30px; }
+    font-size: 30px; }
+    .contenedorSobreMiIndex .sMi .titulo {
+      font-size: 40px; }
+    .contenedorSobreMiIndex .sMi p {
+      font-size: 20px;
+      height: 90px; }
+    .contenedorSobreMiIndex .sMi button {
+      margin-left: 10%; }
+  .contenedorSobreMiIndex main .articuloServicios {
+    height: 350px; }
+  .contenedorSobreMiIndex .mainSobreMi section .sobreMiPag {
+    height: 1000px; }
+  .contenedorSobreMiIndex footer .redes {
+    width: 20%;
+    height: 100%; }
+    .contenedorSobreMiIndex footer .redes a img {
+      width: 30px;
+      height: 30px; }
+  .contenedorSobreMiIndex footer .mainAlumnas {
+    height: 1700px; }
+    .contenedorSobreMiIndex footer .mainAlumnas .principalAlumnas {
+      height: 1500px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: center;
+      grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
+      row-gap: 10px;
+      column-gap: 10px; }
+      .contenedorSobreMiIndex footer .mainAlumnas .principalAlumnas img {
+        object-fit: contain; }
+  .contenedorSobreMiIndex .reviews img {
+    width: 90%;
+    height: 250px;
+    margin-left: 10%; }
 
 @media (max-width: 768px) {
   header {
@@ -427,40 +574,46 @@ footer .mainAlumnas {
       flex-direction: column; }
   .SeccionPrincipalIndex h1 {
     margin-top: 100px;
-    width: 100%; }
+    width: 90%; }
   .SeccionPrincipalIndex p {
     display: none; }
   .SeccionPrincipalIndex button {
     margin-top: 35%;
     width: 250px;
     height: 60px; }
-  .contenedorSobreMiIndex .sMi {
-    padding-top: 30%;
-    margin-left: 50%; }
-    .contenedorSobreMiIndex .sMi p {
-      font-size: 20px; }
-    .contenedorSobreMiIndex .sMi button {
-      margin-left: 12%;
-      width: 200px;
-      height: 60px;
-      font-size: 15px; }
-  .contenedor {
-    height: 700px; }
-    .contenedor .tipoClases div {
-      width: 95%;
-      height: 150px;
-      background-color: #E3BBC5;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-left: 5px; }
-      .contenedor .tipoClases div h3 {
-        font-size: 30px;
-        color: #333131;
-        margin-left: 5%; }
-      .contenedor .tipoClases div img {
-        width: 30%;
-        height: 100%; }
+  .contenedorSobreMiIndex {
+    height: 400px; }
+    .contenedorSobreMiIndex .sMi {
+      padding-top: 20%;
+      margin-left: 30%;
+      height: 1000px;
+      gap: 10px; }
+      .contenedorSobreMiIndex .sMi .titulo {
+        font-size: 30px; }
+      .contenedorSobreMiIndex .sMi p {
+        font-size: 20px;
+        width: 99%;
+        height: 130px; }
+      .contenedorSobreMiIndex .sMi button {
+        margin-left: 10%;
+        width: 200px;
+        height: 40px;
+        font-size: 15px; }
+  .contenedor .tipoClases div {
+    width: 95%;
+    height: 150px;
+    background-color: #E3BBC5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5px; }
+    .contenedor .tipoClases div h3 {
+      font-size: 30px;
+      color: #333131;
+      margin-left: 5%; }
+    .contenedor .tipoClases div img {
+      width: 30%;
+      height: 100%; }
   footer {
     flex-direction: row; }
     footer a img {
@@ -469,82 +622,82 @@ footer .mainAlumnas {
       margin-right: 10px;
       display: flex;
       flex-direction: column; }
-  main .articuloServicios {
-    width: 100%;
-    height: 350px; }
-    main .articuloServicios img {
-      width: 260px;
-      height: 350px; }
-    main .articuloServicios .texto {
-      margin-left: 10px;
-      width: 100%; }
-      main .articuloServicios .texto h3 {
-        height: 150px;
-        font-size: 25px; }
-      main .articuloServicios .texto p {
-        width: 100%;
-        height: 150px; }
-      main .articuloServicios .texto button {
-        margin-left: 10px; }
-  .sobreMi {
-    height: 900px; }
-    .sobreMi .pageSobreMi {
-      display: flex;
-      flex-direction: column;
-      height: 800px; }
-      .sobreMi .pageSobreMi img {
-        width: 400px;
-        height: 250px;
-        align-self: center; }
-      .sobreMi .pageSobreMi p {
-        width: 95%;
-        margin-left: 20px;
-        margin-top: 20px;
-        font-size: 15px; }
   .IndexServicios {
-    height: 820px; }
+    height: 1700px; }
     .IndexServicios h2 {
-      margin-top: 20px;
+      margin-top: 100px;
       height: 50px;
       font-size: 40px; }
     .IndexServicios .packDeClases {
-      height: 700px; }
+      height: 800px;
+      display: flex;
+      flex-direction: column; }
       .IndexServicios .packDeClases .card {
         align-self: center;
         width: 250px;
         height: 250px; }
         .IndexServicios .packDeClases .card button {
           width: 250px;
-          height: 50px; }
-  .mainAlumnas {
-    height: 1200px; }
-    .mainAlumnas h1 {
-      font-size: 50px; }
-    .mainAlumnas .principalAlumnas {
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: repeat(3, 1fr);
-      justify-content: center;
-      grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
-      row-gap: 10px;
-      column-gap: 10px; }
-      .mainAlumnas .principalAlumnas img {
-        width: 50%;
-        height: 80%;
-        object-fit: contain; }
-    .mainAlumnas section video {
-      width: 350px;
-      height: 350px;
-      margin-left: 25%;
-      margin-top: 100px; } }
+          height: 40px;
+          margin-left: 10px; }
+  .mainSobreMi section {
+    display: flex;
+    flex-direction: column; }
+    .mainSobreMi section div img {
+      width: 250px;
+      height: 250px;
+      margin-left: 32%; }
+    .mainSobreMi section div .agregado {
+      font-size: 18px; }
+  .mainSobreMi .sobreMiPag {
+    height: 1000px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      width: 80%;
+      margin-left: 15%;
+      height: 250px;
+      margin-top: 30px; }
+    .mainSobreMi .sobreMiPag .textoFuerza {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      margin-left: 20px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button {
+        width: 300px;
+        height: 40; }
+        .mainSobreMi .sobreMiPag .textoFuerza button a {
+          font-size: 18; }
+  .mainAlumnas .principalAlumnas {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-template-areas: "img1 img2 img3" "img4 img5 img6" "img7 ";
+    row-gap: 10px;
+    column-gap: 10px; }
+  .mainAlumnas .reviews div {
+    width: 90%; }
+    .mainAlumnas .reviews div img {
+      width: 95%; }
+  main .articuloServicios {
+    height: 420px; }
+    main .articuloServicios img {
+      width: 270px; }
+    main .articuloServicios .texto h3 {
+      height: 100px; }
+    main .articuloServicios .texto p {
+      font-size: 18px; }
+    main .articuloServicios .texto button {
+      font-size: 16px;
+      width: 250px; } }
 
-@media (max-width: 520px) {
+@media (max-width: 570px) {
   header img {
     width: 50%;
     height: 200px;
     object-fit: contain; }
   .contenedor {
-    height: 500px; }
+    height: 400px; }
     .contenedor .h2IndexServicios h2 {
       font-size: 30px; }
     .contenedor .tipoClases div {
@@ -559,37 +712,40 @@ footer .mainAlumnas {
         height: 100%; }
   .contenedorSobreMiIndex {
     width: 100%;
-    height: 700px;
+    height: 450px;
     background-image: url(../assets/img/sobremipages.png);
     background-size: contain;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    padding-top: 5px; }
     .contenedorSobreMiIndex .sMi {
-      width: 100%;
-      padding-top: 70%;
-      margin-left: 20px; }
+      width: 90%;
+      padding-top: 90%;
+      margin-left: 20px;
+      gap: 50px; }
       .contenedorSobreMiIndex .sMi .titulo {
         color: #1C668D;
         text-align: center;
         font-size: 30px; }
       .contenedorSobreMiIndex .sMi p {
-        color: #333131; }
+        color: #333131;
+        width: 99%; }
       .contenedorSobreMiIndex .sMi button {
-        margin-left: 12%;
-        width: 200px;
-        height: 60px;
+        margin-left: 30%;
         font-size: 15px; }
   .IndexServicios {
-    height: 900px; }
+    height: 1700px; }
     .IndexServicios h2 {
       height: 30px;
       color: #1C668D;
       font-size: 30px;
       text-transform: uppercase;
-      text-align: center; }
+      text-align: center;
+      margin-top: 400px; }
     .IndexServicios .packDeClases {
       width: 100%;
-      height: 700px; }
+      height: 900px;
+      margin-top: 10px; }
       .IndexServicios .packDeClases .card {
         width: 200px;
         height: 200px; }
@@ -598,36 +754,40 @@ footer .mainAlumnas {
           height: 100%; }
         .IndexServicios .packDeClases .card button {
           width: 200px;
-          height: 30px;
+          height: 40px;
           background-color: #1C668D;
           font-size: 15px;
           color: #f7f7f7;
           border-radius: 20px; }
-  .mainAlumnas {
-    height: 1300px; }
-    .mainAlumnas h1 {
-      font-size: 40px;
-      height: 40px; }
-    .mainAlumnas .principalAlumnas {
-      height: 800px;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr);
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
-      row-gap: 10px;
-      column-gap: 10px; }
-      .mainAlumnas .principalAlumnas img {
-        width: 170px;
-        height: 170px;
-        object-fit: contain;
-        margin-left: 10%;
-        margin-top: 10px; }
-    .mainAlumnas section video {
-      width: 300px;
-      height: 300px;
-      margin-left: 15%;
-      margin-top: 30px; }
+    .IndexServicios section video {
+      margin-left: 15%; }
+  main .articuloServicios {
+    display: flex;
+    flex-direction: column;
+    height: 900px; }
+    main .articuloServicios img {
+      width: 100%;
+      height: 500px; }
+  .mainAlumnas .fotoAlumnas {
+    font-size: 30px;
+    height: 40px; }
+  .mainAlumnas .principalAlumnas {
+    height: 800px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
+    row-gap: 10px;
+    column-gap: 10px; }
+    .mainAlumnas .principalAlumnas img {
+      width: 150px;
+      height: 150px;
+      object-fit: contain;
+      margin-left: 10%;
+      margin-top: 10px; }
+  .mainAlumnas .h2Re {
+    font-size: 30px; }
   footer {
     height: 300px;
     width: 100%;
@@ -647,54 +807,43 @@ footer .mainAlumnas {
       width: 20px;
       height: 20px;
       margin-top: 10px; }
-  main .pack {
+  .mainSobreMi div h1 {
     font-size: 30px; }
-  main .articuloServicios {
-    width: 100%;
-    height: 900px;
-    background-color: #f7f7f7;
-    display: flex;
-    flex-direction: column; }
-    main .articuloServicios img {
-      width: 100%;
-      height: 430px; }
-    main .articuloServicios .texto {
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px;
-      width: 97%; }
-      main .articuloServicios .texto h3 {
-        height: 200px;
-        width: 100%;
-        font-size: 30px;
-        color: #333131; }
-      main .articuloServicios .texto p {
-        width: 100%;
-        height: 200px; }
-    main .articuloServicios button {
-      width: 200px;
-      height: 60px;
-      border-radius: 20px;
-      background-color: #1C668D;
-      color: aliceblue;
-      margin-left: 20%;
-      font-size: 20px; }
-  .sobreMi img {
-    width: 350px;
-    height: 200px;
-    align-self: center; }
-  .sobreMi p {
-    font-size: 15px;
-    margin-top: 20px;
-    padding-left: 0%; } }
+  .mainSobreMi section div img {
+    margin-left: 25%;
+    margin-top: 30px; }
+  .mainSobreMi section div .agregado {
+    height: 470px; }
+  .mainSobreMi .sobreLasClases {
+    font-size: 20px; }
+  .mainSobreMi .sobreMiPag {
+    height: 1100px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      width: 90%;
+      margin-left: 10%;
+      height: 230px;
+      margin-top: 30px; }
+    .mainSobreMi .sobreMiPag .textoFuerza {
+      margin-top: 20px;
+      height: 500px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button {
+        width: 280px;
+        height: 40px;
+        margin-left: 20px; }
+        .mainSobreMi .sobreMiPag .textoFuerza button a {
+          font-size: 18; }
+  .mainContactos {
+    height: 1200px; } }
 
 @media (max-width: 400px) {
   header img {
     width: 60%;
     height: 100px;
     object-fit: contain; }
-  header nav .navBar li a {
-    font-size: 15px; }
+  header nav .navBar {
+    width: 70px; }
+    header nav .navBar li a {
+      font-size: 15px; }
   .SeccionPrincipalIndex {
     height: 500px;
     width: 100%;
@@ -704,52 +853,37 @@ footer .mainAlumnas {
       margin-top: 20px;
       height: 10px; }
     .SeccionPrincipalIndex button {
-      width: 150px;
+      width: 200px;
       height: 40px;
       font-size: 15px;
       margin-left: 80px;
       margin-top: 200px; }
   .contenedorSobreMiIndex {
-    height: 600px;
+    height: 400px;
     width: 100%; }
     .contenedorSobreMiIndex .sMi {
-      padding-top: 60%; }
+      gap: 100px;
+      padding-top: 90%; }
+      .contenedorSobreMiIndex .sMi p {
+        font-size: 18px; }
       .contenedorSobreMiIndex .sMi button {
-        width: 150px;
+        margin-left: 22%;
+        width: 200px;
         height: 40px;
         font-size: 15px; }
   .IndexServicios {
-    height: 1000px; }
+    height: 1500px; }
     .IndexServicios h2 {
       height: 50px;
       font-size: 30px; }
-  .IndexServicios {
-    height: 1000px; }
-    .IndexServicios .packDeClases {
-      height: 900px; }
-  .main .pack h2 {
-    font-size: 30px; }
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px; }
-    .sobreMi h1 {
-      font-size: 30px;
-      color: #1C668D;
-      text-align: center; }
-    .sobreMi .pageSobreMi {
-      display: flex;
-      flex-direction: column;
-      height: 700px; }
-      .sobreMi .pageSobreMi img {
-        width: 250px;
-        height: 150px; }
-      .sobreMi .pageSobreMi p {
-        margin-left: 5px;
-        font-size: 14px; }
-  .mainAlumnas h1 {
-    font-size: 30px; }
+    .IndexServicios section video {
+      width: 250px;
+      height: 300px;
+      margin-left: 15%; }
+  .packDeClases {
+    height: 900px; }
+  .mainAlumnas .fotoAlumnas {
+    font-size: 25px; }
   .mainAlumnas .principalAlumnas {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -759,25 +893,144 @@ footer .mainAlumnas {
     row-gap: 10px;
     column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 140px;
-      height: 140px;
+      width: 120px;
+      height: 120px;
       object-fit: contain;
       margin-left: 10%;
       margin-top: 15%; }
-  .mainAlumnas section video {
-    width: 250px;
-    height: 250px;
-    margin-left: 20%;
-    margin-top: 30px; } }
+  .mainAlumnas .h2Re {
+    font-size: 25px; }
+  main div h1 {
+    font-size: 20px; }
+  main .sobreMiPag div {
+    height: 250px; }
+    main .sobreMiPag div .yo {
+      height: 200px; }
+  main .sobreMiPag .textoFuerza {
+    font-size: 16px; }
+  main .pack {
+    font-size: 30px; }
+  main .articuloServicios {
+    height: 850px; }
+    main .articuloServicios img {
+      height: 400px; }
+  .mainSobreMi div h1 {
+    font-size: 30px; }
+  .mainSobreMi section div {
+    margin-top: 30px; }
+    .mainSobreMi section div img {
+      margin-left: 25%;
+      width: 50%;
+      height: 200px; }
+    .mainSobreMi section div .agregado {
+      height: 570px;
+      font-size: 17px; }
+  .mainSobreMi .sobreMiPag {
+    height: 1350px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      width: 90%;
+      margin-left: 10%;
+      height: 200px;
+      margin-top: 30px; }
+    .mainSobreMi .sobreMiPag .textoFuerza {
+      margin-top: 20px;
+      height: 650px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button {
+        width: 260px;
+        height: 40px;
+        margin-left: 10px; }
+        .mainSobreMi .sobreMiPag .textoFuerza button a {
+          font-size: 16; }
+    .mainSobreMi .sobreMiPag .mockup img {
+      margin-left: 2px;
+      width: 280px;
+      height: 280px; } }
 
 @media (max-width: 300px) {
+  .SeccionPrincipalIndex button {
+    width: 170px; }
   .contenedor .tipoClases div h3 {
     font-size: 15px; }
   .contenedorSobreMiIndex {
-    height: 500px; }
-    .contenedorSobreMiIndex .sMi p {
-      font-size: 15px; }
-    .contenedorSobreMiIndex .sMi button {
-      width: 170px; }
+    height: 250px; }
+    .contenedorSobreMiIndex .sMi {
+      gap: 60px; }
+      .contenedorSobreMiIndex .sMi p {
+        font-size: 15px; }
+      .contenedorSobreMiIndex .sMi button {
+        width: 200px;
+        margin-left: 10%; }
   .IndexServicios {
-    height: 1000px; } }
+    height: 1500px; }
+    .IndexServicios section video {
+      margin-left: 10%;
+      width: 200px;
+      height: 250px; }
+  main div h1 {
+    font-size: 20px; }
+  main .articuloServicios {
+    height: 850px; }
+    main .articuloServicios img {
+      height: 300px; }
+    main .articuloServicios .texto h3 {
+      height: 130px; }
+    main .articuloServicios .texto p {
+      font-size: 16px; }
+    main .articuloServicios .texto button {
+      width: 200px; }
+  .mainAlumnas .principalAlumnas img {
+    width: 100px;
+    height: 100px; }
+  .mainAlumnas .h2Re {
+    font-size: 20px; }
+  .mainAlumnas article {
+    width: 90%;
+    margin-left: 20px; }
+    .mainAlumnas article div img {
+      width: 90%; }
+  .mainSobreMi .sobreMiPag {
+    height: 1500px; }
+    .mainSobreMi .sobreMiPag div {
+      height: 200px; }
+      .mainSobreMi .sobreMiPag div .yo {
+        width: 100%;
+        margin-left: 5%;
+        height: 150px;
+        margin-top: 30px; }
+  .mainSobreMi div h1 {
+    font-size: 30px; }
+  .mainSobreMi section div img {
+    margin-left: 25%;
+    object-fit: contain;
+    border-radius: 20px; }
+  .mainSobreMi section div .agregado {
+    height: 700px;
+    margin-left: 10px; }
+  .mainSobreMi .sobreLasClases {
+    font-size: 16px; }
+  .mainSobreMi .sobreMiPag {
+    height: 1400px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      width: 90%;
+      margin-left: 10%;
+      height: 230px;
+      margin-top: 10px; }
+    .mainSobreMi .sobreMiPag .textoFuerza {
+      margin-top: 20px;
+      height: 500px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button {
+        width: 180px;
+        height: 40px;
+        margin-left: 10px; }
+        .mainSobreMi .sobreMiPag .textoFuerza button a {
+          font-size: 14px; }
+    .mainSobreMi .sobreMiPag .mockup img {
+      margin-left: 10px;
+      width: 200px;
+      height: 200px; }
+  .mainContactos .whatsap p {
+    font-size: 18px; }
+  .mainContactos .whatsap img {
+    margin-right: 40px;
+    width: 60px;
+    height: 60px; } }

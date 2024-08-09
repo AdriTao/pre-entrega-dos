@@ -1,4 +1,10 @@
 @media (max-width: 300px) {
+  .SeccionPrincipalIndex {
+    button {
+      width: 170px;
+    }
+  }
+
   .contenedor {
     .tipoClases {
       div {
@@ -9,18 +15,150 @@
     }
   }
   .contenedorSobreMiIndex {
-    height: 500px;
+    height: 250px;
     .sMi {
-
-        p{
-            font-size: 15px;
-        }
+      gap: 60px;
+      p {
+        font-size: 15px;
+      }
       button {
-        width: 170px;
+        width: 200px;
+        margin-left: 10%;
       }
     }
   }
+
   .IndexServicios {
-    height:1000px;
+    height: 1500px;
+    section video{
+      margin-left: 10%;
+      width: 200px;
+      height: 250px;
+    }
+  }
+  main {
+    div h1 {
+      font-size: map-get($font-size, s);
+    }
+  }
+  main {
+    .articuloServicios {
+      height: 850px;
+      img {
+        height: 300px;
+      }
+
+      .texto {
+        h3 {
+          height: 130px;
+        }
+        p {
+          font-size: 16px;
+        }
+        button {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .mainAlumnas {
+    .principalAlumnas {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .h2Re {
+      font-size: 20px;
+    }
+
+    article {
+      width: 90%;
+      margin-left: 20px;
+      div img {
+        width: 90%;
+      }
+    }
+  }
+  .mainSobreMi {
+    .sobreMiPag {
+      height: 1500px;
+      div {
+        height: 200px;
+        .yo {
+          width: 100%;
+          margin-left: 5%;
+          height: 150px;
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+  .mainSobreMi {
+    div h1 {
+      font-size: map-get($font-size, m);
+    }
+    section {
+      div {
+        img {
+          margin-left: 25%;
+          object-fit: contain;
+          border-radius: 20px;
+        }
+        .agregado {
+          height: 700px;
+          margin-left: 10px;
+        }
+      }
+    }
+    .sobreLasClases {
+      font-size: 16px;
+    }
+    .sobreMiPag {
+      height: 1400px;
+      div {
+        .yo {
+          width: 90%;
+          margin-left: 10%;
+          height: 230px;
+          margin-top: 10px;
+        }
+      }
+      .textoFuerza {
+        margin-top: 20px;
+        height: 500px;
+
+        button {
+          width: 180px;
+          height: 40px;
+          margin-left: 10px;
+
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+      .mockup {
+        img {
+          margin-left: 10px;
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  .mainContactos {
+    .whatsap {
+      p {
+        font-size: 18px;
+      }
+      img {
+        margin-right: 40px;
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
 }

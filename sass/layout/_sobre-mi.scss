@@ -1,28 +1,74 @@
-.sobreMi {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 600px;
-  h1 {
-    font-size: 40px;
+.mainSobreMi {
+  div h1 {
+    font-size: 50px;
     color: $color-principal;
     text-align: center;
+    margin-top: 30px;
+    text-transform: uppercase;
   }
-  .pageSobreMi {
+  section {
     display: flex;
     flex-direction: row;
-    height: 700px;
-
-    img {
-      width: 400px;
-      height: 250px;
-      margin-top: 5%;
+    div {
+      img {
+        width: 250px;
+        height: 250px;
+        margin-left: 20px;
+        border-radius: 20px;
+      }
+      .agregado {
+        width: 90%;
+        height: 400px;
+        margin-left: 30px;
+        padding-top: 30px;
+        font-size: 18px;
+      }
     }
-    p {
-      width: 100%;
+  }
+  .sobreLasClases {
+    font-size: 30px;
+    color: aliceblue;
+    background-color: $color-principal;
+    text-align: center;
+  }
+  .sobreMiPag {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    div {
+      width: 90%;
+      height: 300px;
+      .yo {
+        height: 100%;
+        width: 500px;
+        margin-left: 30%;
+        object-fit: contain;
+      }
+    }
+
+    .textoFuerza {
+      width: 90%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      font-size: map-get($font-size, s);
       margin-left: 20px;
-      margin-top: 200px;
-      font-size: 20px;
+
+      button {
+        margin-left: 20px;
+        margin-top: 50px;
+        width: 300px;
+        height: 60px;
+        background-color: $color-secundario;
+        border-radius: 20px;
+        a {
+          color: $color-texto;
+          font-size: 20px;
+          text-decoration: none;
+        }
+      }
     }
   }
 }

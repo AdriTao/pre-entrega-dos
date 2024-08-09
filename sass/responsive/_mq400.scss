@@ -7,6 +7,7 @@
     }
     nav {
       .navBar {
+        width: 70px;
         li a {
           font-size: 15px;
         }
@@ -26,7 +27,7 @@
       height: 10px;
     }
     button {
-      width: 150px;
+      width: 200px;
       height: 40px;
       font-size: 15px;
       margin-left: 80px;
@@ -35,71 +36,51 @@
   }
 
   .contenedorSobreMiIndex {
-    height: 600px;
+    height: 400px;
     width: 100%;
     .sMi {
-      padding-top: 60%;
+      gap: 100px;
+      padding-top: 90%;
+      p {
+        font-size: 18px;
+      }
 
       button {
-        width: 150px;
+        margin-left: 22%;
+        width: 200px;
         height: 40px;
+
         font-size: 15px;
       }
     }
   }
   .IndexServicios {
-    height: 1000px;
+    height: 1500px;
     h2 {
       height: 50px;
 
       font-size: map-get($font-size, m);
     }
-  }
-  .IndexServicios {
-    height: 1000px;
-    .packDeClases {
-      height: 900px;
+    section video {
+      width: 250px;
+      height: 300px;
+      margin-left: 15%;
     }
   }
-.main{
-  .pack h2{
-    font-size: 30px;
-  }
-}
-  .sobreMi {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 700px;
-    h1 {
-      font-size: 30px;
-      color: $color-principal;
-      text-align: center;
-    }
-    .pageSobreMi {
-      display: flex;
-      flex-direction: column;
-      height: 700px;
 
-      img {
-        width: 250px;
-        height: 150px;
-      }
-      p {
-        margin-left: 5px;
-        font-size: 14px;
-      }
-    }
+  .packDeClases {
+    height: 900px;
   }
+
   .mainAlumnas {
-    h1 {
-      font-size: 30px;
+    .fotoAlumnas {
+      font-size: 25px;
     }
 
     .principalAlumnas {
       img {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         object-fit: contain;
         margin-left: 10%;
         margin-top: 15%;
@@ -113,12 +94,88 @@
         (10px)
       );
     }
+    .h2Re {
+      font-size: 25px;
+    }
+  }
 
-    section video {
-      width: 250px;
-      height: 250px;
-      margin-left: 20%;
-      margin-top: 30px;
+  main {
+    div h1 {
+      font-size: map-get($font-size, s);
+    }
+    .sobreMiPag {
+      div {
+        height: 250px;
+        .yo {
+          height: 200px;
+        }
+      }
+      .textoFuerza {
+        font-size: 16px;
+      }
+    }
+  }
+  main {
+    .pack {
+      font-size: 30px;
+    }
+    .articuloServicios {
+      height: 850px;
+      img {
+        height: 400px;
+      }
+    }
+  }
+  .mainSobreMi {
+    div h1 {
+      font-size: map-get($font-size, m);
+    }
+    section {
+      div {
+        margin-top: 30px;
+        img {
+          margin-left: 25%;
+          width: 50%;
+          height: 200px;
+        }
+        .agregado {
+          height: 570px;
+          font-size: 17px;
+        }
+      }
+    }
+
+    .sobreMiPag {
+      height: 1350px;
+      div {
+        .yo {
+          width: 90%;
+          margin-left: 10%;
+          height: 200px;
+          margin-top: 30px;
+        }
+      }
+      .textoFuerza {
+        margin-top: 20px;
+        height: 650px;
+
+        button {
+          width: 260px;
+          height: 40px;
+          margin-left: 10px;
+
+          a {
+            font-size: 16;
+          }
+        }
+      }
+      .mockup {
+        img {
+          margin-left: 2px;
+          width: 280px;
+          height: 280px;
+        }
+      }
     }
   }
 }
