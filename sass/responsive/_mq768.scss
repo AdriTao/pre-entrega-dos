@@ -171,7 +171,7 @@
         (10px)
       );
     }
-  }
+  
 
   .reviews {
     display: flex;
@@ -180,13 +180,13 @@
     justify-content: center;
     
     img {
-      width: 200px;
-      height: 300px;
+      width: 300px;
+      height: 320px;
       object-fit: contain;
     }
   }
 }
-
+}
 main {
   .articuloServicios {
     height: 420px;

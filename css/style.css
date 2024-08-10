@@ -465,7 +465,8 @@ main .articuloServicios {
     .mainAlumnas .reviews img {
       width: 350px;
       height: 400px;
-      object-fit: contain; }
+      object-fit: contain;
+      border-radius: 50px; }
 
 footer {
   height: 200px;
@@ -677,14 +678,14 @@ footer {
     grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
     row-gap: 10px;
     column-gap: 10px; }
-  .reviews {
+  .mainAlumnas .reviews {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center; }
-    .reviews img {
-      width: 200px;
-      height: 300px;
+    .mainAlumnas .reviews img {
+      width: 300px;
+      height: 320px;
       object-fit: contain; } }
 
 main .articuloServicios {
@@ -797,7 +798,7 @@ main .articuloServicios {
   .mainAlumnas .h2Re {
     font-size: 30px; }
   .mainAlumnas .reviews img {
-    width: 250px;
+    width: 320px;
     height: 270px;
     object-fit: contain; }
   footer {
@@ -888,10 +889,6 @@ main .articuloServicios {
     .IndexServicios h2 {
       height: 50px;
       font-size: 30px; }
-    .IndexServicios section video {
-      width: 250px;
-      height: 300px;
-      margin-left: 15%; }
   .packDeClases {
     height: 900px; }
   .mainAlumnas .fotoAlumnas {
@@ -914,6 +911,10 @@ main .articuloServicios {
       margin-top: 10px; }
   .mainAlumnas .h2Re {
     font-size: 25px; }
+  .mainAlumnas .reviews img {
+    width: 299px;
+    height: 250px;
+    object-fit: contain; }
   main div h1 {
     font-size: 20px; }
   main .sobreMiPag div {
@@ -998,17 +999,12 @@ main .articuloServicios {
     .mainAlumnas .principalAlumnas img {
       width: 220px;
       height: 220px; }
-    .mainAlumnas .principalAlumnas .h2Re {
-      font-size: 20px; }
-    .mainAlumnas .principalAlumnas .reviews img {
-      width: 250px;
-      height: 270px;
-      object-fit: contain; }
-  .mainAlumnas article {
-    width: 90%;
-    margin-left: 20px; }
-    .mainAlumnas article div img {
-      width: 90%; }
+  .mainAlumnas .h2Re {
+    font-size: 20px; }
+  .mainAlumnas .reviews img {
+    width: 250px;
+    height: 230px;
+    object-fit: contain; }
   .mainSobreMi .sobreMiPag {
     height: 1500px; }
     .mainSobreMi .sobreMiPag div {

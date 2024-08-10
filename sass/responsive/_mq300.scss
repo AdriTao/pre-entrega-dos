@@ -70,24 +70,15 @@
         width: 220px;
         height: 220px;
       }
-
-      .h2Re {
-        font-size: 20px;
-      }
-      .reviews {
-        img {
-          width: 250px;
-          height: 270px;
-          object-fit: contain;
-        }
-      }
     }
-
-    article {
-      width: 90%;
-      margin-left: 20px;
-      div img {
-        width: 90%;
+    .h2Re {
+      font-size: 20px;
+    }
+    .reviews {
+      img {
+        width: 250px;
+        height: 230px;
+        object-fit: contain;
       }
     }
   }

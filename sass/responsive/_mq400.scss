@@ -61,11 +61,6 @@
 
       font-size: map-get($font-size, m);
     }
-    section video {
-      width: 250px;
-      height: 300px;
-      margin-left: 15%;
-    }
   }
 
   .packDeClases {
@@ -91,13 +86,20 @@
         repeat(7, 1fr),
         repeat(1, 1fr),
         center,
-        "img1" "img2" "img3"" img4 " " img5"" img6 " "img7",
+        "img1" "img2" "img3" " img4 " " img5" " img6 " "img7",
         (10px),
         (10px)
       );
     }
     .h2Re {
       font-size: 25px;
+    }
+    .reviews {
+      img {
+        width: 299px;
+        height: 250px;
+        object-fit: contain;
+      }
     }
   }
 
