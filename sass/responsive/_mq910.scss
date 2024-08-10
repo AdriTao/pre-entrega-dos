@@ -45,7 +45,7 @@
   .contenedorSobreMiIndex {
     height: 800px;
     .sMi {
-      padding-top: 37%;
+      padding-top: 30%;
       margin-left: 30%;
       font-size: 30px;
       .titulo {
@@ -55,7 +55,7 @@
 
       p {
         font-size: 20px;
-        height: 90px;
+        height: 120px;
       }
       button {
         margin-left: 10%;
@@ -68,50 +68,52 @@
     }
   }
   .mainSobreMi {
-    section {
-      .sobreMiPag {
-        height: 1000px;
+    .sobreMiPag {
+      height: 1200px;
+      div {
+        .yo {
+          margin-left: 10%;
+        }
       }
     }
-  }
-
-  footer {
-    .redes {
-      width: 20%;
-      height: 100%;
-      a img {
-        width: 30px;
-        height: 30px;
+    footer {
+      .redes {
+        width: 20%;
+        height: 100%;
+        a img {
+          width: 30px;
+          height: 30px;
+        }
       }
     }
-  }
-  .mainAlumnas {
-    .principalAlumnas {
-      height: 900px;
-      img {
-        object-fit: contain;
+    .mainAlumnas {
+      .principalAlumnas {
+        height: 900px;
+        img {
+          object-fit: contain;
+        }
+
+        @include grid(
+          repeat(3, 1fr),
+          repeat(3, 1fr),
+          center,
+          "img1 img2 img3" "img4 img5 img6" "img7 ",
+          (10px),
+          (10px)
+        );
       }
 
-      @include grid(
-        repeat(3, 1fr),
-        repeat(3, 1fr),
-        center,
-        "img1 img2 img3" "img4 img5 img6" "img7 ",
-        (10px),
-        (10px)
-      );
-    }
+      .reviews {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
 
-    .reviews {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-
-      img {
-        width: 300px;
-        height: 350px;
-        object-fit: contain;
+        img {
+          width: 300px;
+          height: 350px;
+          object-fit: contain;
+        }
       }
     }
   }

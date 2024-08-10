@@ -21,9 +21,10 @@
 
     p {
       display: none;
+      
     }
     button {
-      margin-top: 35%;
+      margin-top: 30%;
       width: 250px;
       height: 60px;
     }
@@ -32,23 +33,23 @@
   .contenedorSobreMiIndex {
     height: 400px;
     .sMi {
-      padding-top: 20%;
+      padding-top: 18%;
       margin-left: 30%;
       height: 1000px;
       gap: 10px;
       .titulo {
-        font-size: 30px;
-        margin-top:5px;
+        font-size: 25px;
+        margin-top: 5px;
       }
       p {
-        font-size: 20px;
+        font-size: 17px;
         width: 99%;
-        height: 130px;
+        height: 120px;
       }
       button {
         margin-left: 10%;
         width: 200px;
-        height: 40px;
+        height: 35px;
         font-size: 15px;
       }
     }
@@ -131,16 +132,17 @@
         }
       }
     }
+
     .sobreMiPag {
-      height: 1000px;
       div {
         .yo {
-          width: 80%;
-          margin-left: 15%;
-          height: 250px;
-          margin-top: 30px;
+          
+          height: 400px;
+          width: 500px;
+
         }
       }
+
       .textoFuerza {
         width: 90%;
         margin-top: 20px;
@@ -171,25 +173,24 @@
         (10px)
       );
     }
-  
 
-  .reviews {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    img {
-      width: 300px;
-      height: 320px;
-      object-fit: contain;
+    .reviews {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      img {
+        width: 300px;
+        height: 320px;
+        object-fit: contain;
+      }
     }
   }
 }
-}
 main {
   .articuloServicios {
-    height: 420px;
+    height: 450px;
     img {
       width: 270px;
     }

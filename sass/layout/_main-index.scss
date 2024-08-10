@@ -23,7 +23,7 @@
 
   p {
     width: 70%;
-    height: 200px;
+    height: 150px;
     color: $color-fondo;
     font-size: map-get($font-size, m);
     text-align: center;
@@ -119,10 +119,11 @@
 
     button {
       width: 250px;
-      height: 50px;
+      height: 40px;
       background-color: $color-secundario;
       font-size: map-get($font-size, s);
       border-radius: 30px;
+      margin-top: 10px;
       a {
         color: $color-texto;
         text-decoration: none;
@@ -154,8 +155,9 @@
 
     row-gap: 60px;
     margin-top: 20px;
-    .card {
-      width: 250px;
+    .card  {
+      
+      width: 250px ;
       height: 250px;
       margin-top: 50px;
 

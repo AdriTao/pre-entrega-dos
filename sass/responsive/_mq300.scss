@@ -43,9 +43,9 @@
   }
   main {
     .articuloServicios {
-      height: 850px;
+      height: 900px;
       img {
-        height: 300px;
+        height: 400px;
       }
 
       .texto {
@@ -82,20 +82,7 @@
       }
     }
   }
-  .mainSobreMi {
-    .sobreMiPag {
-      height: 1500px;
-      div {
-        height: 200px;
-        .yo {
-          width: 100%;
-          margin-left: 5%;
-          height: 150px;
-          margin-top: 30px;
-        }
-      }
-    }
-  }
+
   .mainSobreMi {
     div h1 {
       font-size: map-get($font-size, m);
@@ -120,9 +107,10 @@
       height: 1400px;
       div {
         .yo {
-          width: 90%;
-          margin-left: 10%;
-          height: 230px;
+          width: 100%;
+          margin-left: 5px;
+          
+          height: 300px;
           margin-top: 10px;
         }
       }
@@ -138,13 +126,6 @@
           a {
             font-size: 14px;
           }
-        }
-      }
-      .mockup {
-        img {
-          margin-left: 10px;
-          width: 200px;
-          height: 200px;
         }
       }
     }
