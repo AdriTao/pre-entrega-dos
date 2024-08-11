@@ -73,12 +73,13 @@
         object-fit: contain;
        justify-self: flex-start;
        align-self: center;
+       
       }
       @include grid(
-        repeat(7, 1fr),
+        repeat(6, 1fr),
         repeat(1, 1fr),
         center,
-        "img1"" img2" "img3"" img4 " " img5"" img6 " "img7",
+        "img1"" img2" "img3"" img4 " " img5"" img6 " ,
         (10px),
         (10px)
       );

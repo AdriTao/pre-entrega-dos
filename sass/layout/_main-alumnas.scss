@@ -24,10 +24,10 @@
     }
 
     @include grid(
-      repeat(3, 1fr),
+      repeat(2, 1fr),
       repeat(3, 1fr),
       center,
-      "img1 img2 img3" "img4 img5 img6" "img7 ",
+      "img1 img2 img3" "img4 img5 img6" ,
       (10px),
       (10px)
     );
