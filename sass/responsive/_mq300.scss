@@ -45,7 +45,8 @@
     .articuloServicios {
       height: 900px;
       img {
-        height: 400px;
+        height: 350px;
+        width: 100%;
       }
 
       .texto {
@@ -64,82 +65,95 @@
 
   .mainAlumnas {
     .principalAlumnas {
-      height: 1700px;
-      margin-top: 50px;
+      height: 2000px;
+     
       img {
-        width: 220px;
-        height: 220px;
+        width: 90%;
+        height: 100%;
+        object-fit: contain;
+       justify-self: flex-start;
+       align-self: center;
       }
+      @include grid(
+        repeat(7, 1fr),
+        repeat(1, 1fr),
+        center,
+        "img1"" img2" "img3"" img4 " " img5"" img6 " "img7",
+        (10px),
+        (10px)
+      );
     }
     .h2Re {
       font-size: 20px;
     }
     .reviews {
       img {
-        width: 250px;
-        height: 230px;
+        width: 120px;
+        height: 180px;
         object-fit: contain;
+       margin-top: 100px;
       }
     }
   }
-
-  .mainSobreMi {
-    div h1 {
-      font-size: map-get($font-size, m);
-    }
-    section {
-      div {
-        img {
-          margin-left: 25%;
-          object-fit: contain;
-          border-radius: 20px;
-        }
-        .agregado {
-          height: 700px;
-          margin-left: 10px;
+    .mainSobreMi {
+      div h1 {
+        font-size: map-get($font-size, m);
+      }
+      section {
+        div {
+          img {
+            margin-left: 25%;
+            object-fit: contain;
+            border-radius: 20px;
+          }
+          .agregado {
+            height: 700px;
+            margin-left: 10px;
+          }
         }
       }
-    }
-    .sobreLasClases {
-      font-size: 16px;
-    }
-    .sobreMiPag {
-      height: 1400px;
-      div {
-        .yo {
-          width: 100%;
-          margin-left: 5px;
-          
-          height: 300px;
-          margin-top: 10px;
-        }
+      .sobreLasClases {
+        font-size: 16px;
       }
-      .textoFuerza {
-        margin-top: 20px;
-        height: 500px;
+      .sobreMiPag {
+        height: 1400px;
+        div {
+          .yo {
+            width: 90%;
+            margin-left: 5px;
 
-        button {
-          width: 180px;
-          height: 40px;
-          margin-left: 10px;
+            height: 200px;
+            margin-top: 10px;
+            
+          }
+        }
+        .textoFuerza {
+          margin-top: 20px;
+          height: 500px;
 
-          a {
-            font-size: 14px;
+          button {
+            width: 180px;
+            height: 40px;
+            margin-left: 10px;
+
+            a {
+              font-size: 14px;
+            }
           }
         }
       }
     }
-  }
-  .mainContactos {
-    .whatsap {
-      p {
-        font-size: 18px;
-      }
-      img {
-        margin-right: 40px;
-        width: 60px;
-        height: 60px;
+    .mainContactos {
+      .whatsap {
+        p {
+          font-size: 18px;
+        }
+        img {
+          margin-right: 40px;
+          width: 60px;
+          height: 60px;
+        }
       }
     }
   }
-}
+

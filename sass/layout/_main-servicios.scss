@@ -13,13 +13,14 @@ main {
     display: flex;
     flex-direction: row;
 
-    img {
-      width: 270px;
-      height: 100%;
-      
-     
-    }
-    .texto {
+    
+     div img{
+        width: 400px;
+        height: 100%;
+        
+      }
+    
+     .texto {
       display: flex;
       flex-direction: column;
       margin-left: 18px;
@@ -32,7 +33,7 @@ main {
       }
       p {
         width: 95%;
-        font-size: 20px;
+        font-size: 30px;
       }
 
       button {

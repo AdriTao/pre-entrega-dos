@@ -54,8 +54,9 @@
       }
 
       p {
-        font-size: 20px;
+        font-size: 30px;
         height: 120px;
+        
       }
       button {
         margin-left: 10%;
@@ -65,6 +66,7 @@
   main {
     .articuloServicios {
       height: 350px;
+     
     }
   }
   .mainSobreMi {
@@ -72,7 +74,7 @@
       height: 1200px;
       div {
         .yo {
-          margin-left: 10%;
+          margin-left: 5%;
         }
       }
     }
@@ -104,11 +106,6 @@
       }
 
       .reviews {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-
         img {
           width: 300px;
           height: 350px;

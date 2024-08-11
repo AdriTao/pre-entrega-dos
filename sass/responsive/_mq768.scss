@@ -21,12 +21,12 @@
 
     p {
       display: none;
-      
     }
     button {
       margin-top: 30%;
       width: 250px;
       height: 60px;
+      font-size: map-get($font-size , s );
     }
   }
 
@@ -134,12 +134,12 @@
     }
 
     .sobreMiPag {
+      height: 1100px;
       div {
         .yo {
-          
           height: 400px;
-          width: 500px;
-
+          
+         
         }
       }
 
@@ -162,6 +162,9 @@
   }
 
   .mainAlumnas {
+    .fotoAlumnas{
+      font-size: 40px;
+    }
     .principalAlumnas {
       height: 1300px;
       @include grid(
@@ -173,13 +176,10 @@
         (10px)
       );
     }
-
+    .h2Re {
+      font-size: 30px;
+    }
     .reviews {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-
       img {
         width: 300px;
         height: 320px;
@@ -190,10 +190,10 @@
 }
 main {
   .articuloServicios {
-    height: 450px;
-    img {
-      width: 270px;
-    }
+    height: 480px;
+     div img{
+      width: 300px;
+     }
     .texto {
       h3 {
         height: 100px;

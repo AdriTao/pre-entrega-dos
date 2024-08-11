@@ -62,11 +62,11 @@ header {
     margin-top: 20px; }
   .SeccionPrincipalIndex button {
     height: 70px;
-    width: 350px;
+    width: 380px;
     margin-top: 5%;
     background-color: #E3BBC5;
     border-radius: 30px;
-    font-size: 20px; }
+    font-size: 30px; }
     .SeccionPrincipalIndex button a {
       text-decoration: none;
       color: #333131; }
@@ -143,9 +143,10 @@ header {
   .IndexServicios h2 {
     height: 70px;
     color: #1C668D;
-    font-size: 70px;
+    font-size: 50px;
     text-transform: uppercase;
-    text-align: center; }
+    text-align: center;
+    margin-top: 50px; }
   .IndexServicios .packDeClases {
     width: 100%;
     height: 200px;
@@ -279,8 +280,8 @@ main .articuloServicios {
   background-color: #f7f7f7;
   display: flex;
   flex-direction: row; }
-  main .articuloServicios img {
-    width: 270px;
+  main .articuloServicios div img {
+    width: 400px;
     height: 100%; }
   main .articuloServicios .texto {
     display: flex;
@@ -293,7 +294,7 @@ main .articuloServicios {
       margin-top: 20px; }
     main .articuloServicios .texto p {
       width: 95%;
-      font-size: 20px; }
+      font-size: 30px; }
     main .articuloServicios .texto button {
       border-radius: 20px;
       background-color: #1C668D;
@@ -339,14 +340,15 @@ main .articuloServicios {
 
 .mainSobreMi .sobreMiPag {
   width: 100%;
-  height: 1000px;
+  height: 1100px;
   display: flex;
   flex-direction: column;
   margin-top: 30px; }
   .mainSobreMi .sobreMiPag div .yo {
-    width: 600px;
+    width: 90%;
     align-items: center;
     height: 500px;
+    object-fit: contain;
     margin-top: 5px; }
   .mainSobreMi .sobreMiPag .textoFuerza {
     width: 90%;
@@ -450,21 +452,20 @@ main .articuloServicios {
         transform: scale(1.2); }
   .mainAlumnas .h2Re {
     font-size: 40px;
-    color: aliceblue;
-    background-color: #1C668D;
+    color: #1C668D;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 50px; }
+    margin-top: 30px;
+    height: 50px; }
   .mainAlumnas .reviews {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
+    height: 500px;
+    background-image: url(../assets/img/chicafitness2.png);
+    background-size: cover; }
     .mainAlumnas .reviews img {
-      width: 350px;
-      height: 400px;
+      width: 300px;
+      height: 300px;
       object-fit: contain;
-      border-radius: 50px; }
+      margin-top: 50px; }
 
 footer {
   height: 200px;
@@ -526,7 +527,7 @@ footer {
         font-size: 40px;
         margin-top: 10%; }
       .contenedorSobreMiIndex .sMi p {
-        font-size: 20px;
+        font-size: 30px;
         height: 120px; }
       .contenedorSobreMiIndex .sMi button {
         margin-left: 10%; }
@@ -535,7 +536,7 @@ footer {
   .mainSobreMi .sobreMiPag {
     height: 1200px; }
     .mainSobreMi .sobreMiPag div .yo {
-      margin-left: 10%; }
+      margin-left: 5%; }
   .mainSobreMi footer .redes {
     width: 20%;
     height: 100%; }
@@ -553,15 +554,10 @@ footer {
     column-gap: 10px; }
     .mainSobreMi .mainAlumnas .principalAlumnas img {
       object-fit: contain; }
-  .mainSobreMi .mainAlumnas .reviews {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .mainSobreMi .mainAlumnas .reviews img {
-      width: 300px;
-      height: 350px;
-      object-fit: contain; } }
+  .mainSobreMi .mainAlumnas .reviews img {
+    width: 300px;
+    height: 350px;
+    object-fit: contain; } }
 
 @media (max-width: 768px) {
   header {
@@ -581,7 +577,8 @@ footer {
   .SeccionPrincipalIndex button {
     margin-top: 30%;
     width: 250px;
-    height: 60px; }
+    height: 60px;
+    font-size: 20px; }
   .contenedorSobreMiIndex {
     height: 400px; }
     .contenedorSobreMiIndex .sMi {
@@ -651,20 +648,23 @@ footer {
       margin-left: 32%; }
     .mainSobreMi section div .agregado {
       font-size: 18px; }
-  .mainSobreMi .sobreMiPag div .yo {
-    height: 400px;
-    width: 500px; }
-  .mainSobreMi .sobreMiPag .textoFuerza {
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 18px;
-    margin-left: 20px; }
-    .mainSobreMi .sobreMiPag .textoFuerza button {
-      width: 300px;
-      height: 40; }
-      .mainSobreMi .sobreMiPag .textoFuerza button a {
-        font-size: 18; }
+  .mainSobreMi .sobreMiPag {
+    height: 1100px; }
+    .mainSobreMi .sobreMiPag div .yo {
+      height: 400px; }
+    .mainSobreMi .sobreMiPag .textoFuerza {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: 18px;
+      margin-left: 20px; }
+      .mainSobreMi .sobreMiPag .textoFuerza button {
+        width: 300px;
+        height: 40; }
+        .mainSobreMi .sobreMiPag .textoFuerza button a {
+          font-size: 18; }
+  .mainAlumnas .fotoAlumnas {
+    font-size: 40px; }
   .mainAlumnas .principalAlumnas {
     height: 1300px;
     display: grid;
@@ -674,20 +674,17 @@ footer {
     grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
     row-gap: 10px;
     column-gap: 10px; }
-  .mainAlumnas .reviews {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center; }
-    .mainAlumnas .reviews img {
-      width: 300px;
-      height: 320px;
-      object-fit: contain; } }
+  .mainAlumnas .h2Re {
+    font-size: 30px; }
+  .mainAlumnas .reviews img {
+    width: 300px;
+    height: 320px;
+    object-fit: contain; } }
 
 main .articuloServicios {
-  height: 450px; }
-  main .articuloServicios img {
-    width: 270px; }
+  height: 480px; }
+  main .articuloServicios div img {
+    width: 300px; }
   main .articuloServicios .texto h3 {
     height: 100px; }
   main .articuloServicios .texto p {
@@ -764,17 +761,16 @@ main .articuloServicios {
           font-size: 15px;
           color: #f7f7f7;
           border-radius: 20px; }
-    .IndexServicios section video {
-      margin-left: 15%; }
   main .articuloServicios {
     display: flex;
     flex-direction: column;
-    height: 1000px; }
-    main .articuloServicios img {
+    height: 800px;
+    align-items: center; }
+    main .articuloServicios div img {
+      border-radius: 20px;
       width: 100%;
-      height: 550px;
-      object-fit: contain;
-      margin-top: 20px; }
+      height: 350px;
+      margin-top: 30px; }
   .mainAlumnas .fotoAlumnas {
     font-size: 30px;
     height: 40px; }
@@ -791,16 +787,17 @@ main .articuloServicios {
       width: 180px;
       height: 180px;
       object-fit: contain;
-      margin-left: 10%;
-      margin-top: 10px; }
+      margin-top: 10px;
+      margin-left: 10px; }
   .mainAlumnas .h2Re {
-    font-size: 30px; }
+    font-size: 30px;
+    height: 100px; }
   .mainAlumnas .reviews img {
-    width: 320px;
+    width: 250px;
     height: 270px;
     object-fit: contain; }
   footer {
-    height: 300px;
+    height: 320px;
     width: 100%;
     display: flex;
     flex-direction: column; }
@@ -831,7 +828,7 @@ main .articuloServicios {
     height: 1100px; }
     .mainSobreMi .sobreMiPag div .yo {
       height: 300px;
-      width: 350px; }
+      width: 90%; }
     .mainSobreMi .sobreMiPag .textoFuerza {
       margin-top: 20px;
       height: 500px; }
@@ -890,36 +887,35 @@ main .articuloServicios {
   .mainAlumnas .fotoAlumnas {
     font-size: 25px; }
   .mainAlumnas .principalAlumnas {
-    height: 2000px;
-    margin-top: 3px;
+    height: 800px;
     display: grid;
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    grid-template-areas: "img1" "img2" "img3" " img4 " " img5" " img6 " "img7";
+    grid-template-areas: "img1 img2" "img3 img4 " " img5 img6 " "img7";
     row-gap: 10px;
     column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 250px;
-      height: 250px;
+      width: 90%;
+      height: 100%;
       object-fit: contain;
-      margin-left: 10%;
-      margin-top: 10px; }
+      justify-self: flex-start;
+      align-self: center; }
   .mainAlumnas .h2Re {
     font-size: 25px; }
   .mainAlumnas .reviews img {
-    width: 299px;
-    height: 250px;
+    width: 180px;
+    height: 200px;
     object-fit: contain; }
   main .pack {
     font-size: 30px; }
   main .articuloServicios {
-    height: 1000px; }
+    height: 850px; }
     main .articuloServicios img {
-      height: 500px;
-      object-fit: contain;
-      object-fit: cover;
-      margin-top: 0%; }
+      border-radius: 20px;
+      width: 100%;
+      height: 350px;
+      margin-top: 30px; }
   .mainSobreMi div h1 {
     font-size: 30px; }
   .mainSobreMi section div {
@@ -972,7 +968,8 @@ main .articuloServicios {
   main .articuloServicios {
     height: 900px; }
     main .articuloServicios img {
-      height: 400px; }
+      height: 350px;
+      width: 100%; }
     main .articuloServicios .texto h3 {
       height: 130px; }
     main .articuloServicios .texto p {
@@ -980,17 +977,27 @@ main .articuloServicios {
     main .articuloServicios .texto button {
       width: 200px; }
   .mainAlumnas .principalAlumnas {
-    height: 1700px;
-    margin-top: 50px; }
+    height: 2000px;
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    grid-template-areas: "img1" " img2" "img3" " img4 " " img5" " img6 " "img7";
+    row-gap: 10px;
+    column-gap: 10px; }
     .mainAlumnas .principalAlumnas img {
-      width: 220px;
-      height: 220px; }
+      width: 90%;
+      height: 100%;
+      object-fit: contain;
+      justify-self: flex-start;
+      align-self: center; }
   .mainAlumnas .h2Re {
     font-size: 20px; }
   .mainAlumnas .reviews img {
-    width: 250px;
-    height: 230px;
-    object-fit: contain; }
+    width: 120px;
+    height: 180px;
+    object-fit: contain;
+    margin-top: 100px; }
   .mainSobreMi div h1 {
     font-size: 30px; }
   .mainSobreMi section div img {
@@ -1005,9 +1012,9 @@ main .articuloServicios {
   .mainSobreMi .sobreMiPag {
     height: 1400px; }
     .mainSobreMi .sobreMiPag div .yo {
-      width: 100%;
+      width: 90%;
       margin-left: 5px;
-      height: 300px;
+      height: 200px;
       margin-top: 10px; }
     .mainSobreMi .sobreMiPag .textoFuerza {
       margin-top: 20px;

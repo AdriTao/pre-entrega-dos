@@ -33,16 +33,17 @@
   }
   .sobreMiPag {
     width: 100%;
-    height: 1000px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
 
     div {
       .yo {
-        width: 600px;
+        width: 90%;
         align-items: center;
         height: 500px;
+        object-fit: contain;
         margin-top: 5px;
       }
     }
