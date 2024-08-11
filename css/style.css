@@ -527,7 +527,7 @@ footer {
         font-size: 40px;
         margin-top: 10%; }
       .contenedorSobreMiIndex .sMi p {
-        font-size: 30px;
+        font-size: 20px;
         height: 120px; }
       .contenedorSobreMiIndex .sMi button {
         margin-left: 10%; }
@@ -714,7 +714,7 @@ main .articuloServicios {
         height: 100%; }
   .contenedorSobreMiIndex {
     width: 100%;
-    height: 450px;
+    height: 250px;
     background-image: url(../assets/img/sobremipages.png);
     background-size: contain;
     display: flex;
@@ -722,7 +722,7 @@ main .articuloServicios {
     padding-top: 5px; }
     .contenedorSobreMiIndex .sMi {
       width: 90%;
-      padding-top: 90%;
+      padding-top: 60%;
       margin-left: 20px;
       gap: 50px; }
       .contenedorSobreMiIndex .sMi .titulo {
@@ -731,9 +731,11 @@ main .articuloServicios {
         font-size: 30px; }
       .contenedorSobreMiIndex .sMi p {
         color: #333131;
-        width: 99%; }
+        width: 99%;
+        align-items: center; }
       .contenedorSobreMiIndex .sMi button {
-        margin-left: 30%;
+        align-items: center;
+        margin-left: 28%;
         font-size: 15px; }
   .IndexServicios {
     height: 1100px; }
@@ -865,17 +867,15 @@ main .articuloServicios {
       margin-left: 80px;
       margin-top: 200px; }
   .contenedorSobreMiIndex {
-    height: 400px;
+    height: 250px;
     width: 100%; }
     .contenedorSobreMiIndex .sMi {
-      gap: 100px;
-      padding-top: 90%; }
-      .contenedorSobreMiIndex .sMi p {
-        font-size: 18px; }
+      width: 90%;
+      padding-top: 70%;
+      margin-left: 20px;
+      gap: 50px; }
       .contenedorSobreMiIndex .sMi button {
-        margin-left: 22%;
-        width: 200px;
-        height: 40px;
+        margin-left: 18%;
         font-size: 15px; }
   .IndexServicios {
     height: 1100px; }
@@ -888,6 +888,7 @@ main .articuloServicios {
     font-size: 25px; }
   .mainAlumnas .principalAlumnas {
     height: 800px;
+    overflow: hidden;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -901,6 +902,8 @@ main .articuloServicios {
       object-fit: contain;
       justify-self: flex-start;
       align-self: center; }
+      .mainAlumnas .principalAlumnas img:hover {
+        transform: scale(1.3); }
   .mainAlumnas .h2Re {
     font-size: 25px; }
   .mainAlumnas .reviews img {

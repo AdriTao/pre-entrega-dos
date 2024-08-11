@@ -36,7 +36,7 @@
 
   .contenedorSobreMiIndex {
     width: 100%;
-    height: 450px;
+    height: 250px;
     background-image: url(../assets/img/sobremipages.png);
     background-size: contain;
     display: flex;
@@ -44,7 +44,7 @@
     padding-top: 5px;
     .sMi {
       width: 90%;
-      padding-top: 90%;
+      padding-top: 60%;
       margin-left: 20px;
       gap: 50px;
 
@@ -56,9 +56,11 @@
       p {
         color: $color-texto;
         width: 99%;
+        align-items: center;
       }
       button {
-        margin-left: 30%;
+        align-items: center;
+        margin-left: 28%;
 
         font-size: 15px;
       }
